@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../Boti" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../jpa_example" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../ladm-adsvc" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../ladm-batch" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../ladm-billing" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../ladm-personal" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../ladm-report" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../ladm-searcher" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../ladm-webgw" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../sway-service" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="-154" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>open-jdk-12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
