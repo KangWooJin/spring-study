@@ -1,0 +1,49 @@
+<configuration debug="true">
+  <conversionRule conversionWord="clr"
+                  converterClass="org.springframework.boot.logging.logback.ColorConverter" />
+
+  <property name="LOG_PATH" value="/tmp" />
+  <property name="LOG_FILE" value="${LOG_PATH}/logback-test.log" />
+
+  <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS,Asia/Tokyo} %clr(%-5level)
+        [%thread,%X{traceId:-},%X{spanId:-},%X{spanExportable:-}] %clr(%logger{36}){cyan} [%file:%line] - %msg%n
+      </pattern>
+    </encoder>
+  </appender>
+
+  <appender name="RollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${LOG_FILE}</file>
+    <encoder>
+      <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS,Asia/Tokyo} %-5level
+        [%thread,%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] %logger{36} [%file:%line] - %msg ##%n
+      </Pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- daily rollover -->
+      <fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}</fileNamePattern>
+      <maxHistory>5</maxHistory>
+    </rollingPolicy>
+  </appender>
+
+  <appender name="console-async" class="ch.qos.logback.classic.AsyncAppender">
+    <appender-ref ref="consoleAppender" />
+    <includeCallerData>false</includeCallerData>
+  </appender>
+
+  <appender name="file-async" class="ch.qos.logback.classic.AsyncAppender">
+    <appender-ref ref="RollingFile" />
+    <queueSize>1</queueSize>
+    <discardingThreshold>0</discardingThreshold>
+    <includeCallerData>true</includeCallerData>
+    <neverBlock>false</neverBlock>
+  </appender>
+
+  <!-- LOG everything at INFO level -->
+  <root level="TRACE">
+    <!--    <appender-ref ref="file-async" />-->
+    <appender-ref ref="RollingFile" />
+  </root>
+
+</configuration>

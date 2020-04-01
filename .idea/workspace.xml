@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logback/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logback/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logback/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logback/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logback/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logback/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logback/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logback/src/main/java/kangwoojin/github/io/demo/LogbackApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logback/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logback/src/test/java/kangwoojin/github/io/demo/LogBackTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logback/src/test/java/kangwoojin/github/io/demo/LogbackApplicationTests.java" afterDir="false" />
+    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="add logback init">
+      <change afterPath="$PROJECT_DIR$/logback/src/main/java/kangwoojin/github/io/demo/service/LogbackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logback/src/main/resources/logback-spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logback/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/logback/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logback/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/logback/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logback/src/test/java/kangwoojin/github/io/demo/LogBackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/logback/src/test/java/kangwoojin/github/io/demo/LogBackTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,17 +39,11 @@
       <list>
         <option value="Kotlin Script" />
         <option value="Kotlin File" />
+        <option value="spring-beans.schema" />
+        <option value="Python Script" />
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>strictDeprecationMode</find>
-      <find>st</find>
-      <find>timestamp</find>
-      <find>ISO_ZON</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,12 +54,6 @@
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-147" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
   </component>
   <component name="ProjectId" id="1ZwFmQSAePqIgNhzbRECOaKMseb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -107,7 +89,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25152308" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
@@ -123,7 +105,27 @@
       <recent name="$PROJECT_DIR$/elasticsearch" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ElasticsearchTests.mappingTest">
+  <component name="RunManager" selected="Spring Boot.LogbackApplication">
+    <configuration name="LogBackTest.logBackTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/logback" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;kangwoojin.github.io.demo.LogBackTest.logBackTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ElasticsearchTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="elasticsearch.test" />
       <extension name="coverage">
@@ -167,6 +169,22 @@
       <option name="PACKAGE_NAME" value="kangwoojin.github.io.elasticsearch" />
       <option name="MAIN_CLASS_NAME" value="kangwoojin.github.io.elasticsearch.ElasticsearchTests" />
       <option name="METHOD_NAME" value="saveTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogBackTest.logBackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kangwoojin.github.io.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kangwoojin.github.io.demo" />
+      <option name="MAIN_CLASS_NAME" value="kangwoojin.github.io.demo.LogBackTest" />
+      <option name="METHOD_NAME" value="logBackTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -222,6 +240,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LogBackTest.logBackTest" />
+        <item itemvalue="Gradle.LogBackTest.logBackTest" />
         <item itemvalue="JUnit.ElasticsearchTests.mappingTest" />
         <item itemvalue="JUnit.ElasticsearchTests.saveTest" />
         <item itemvalue="JUnit.ElasticsearchTests.contextLoads" />
@@ -242,7 +262,9 @@
       <workItem from="1583759013217" duration="1922000" />
       <workItem from="1583844872911" duration="3573000" />
       <workItem from="1583929696314" duration="10287000" />
-      <workItem from="1585742409816" duration="690000" />
+      <workItem from="1585742409816" duration="1006000" />
+      <workItem from="1585743450961" duration="7586000" />
+      <workItem from="1585753114871" duration="597000" />
     </task>
     <task id="LOCAL-00001" summary="init elastic search study">
       <created>1583676715935</created>
@@ -286,40 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1583934082857</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add logback init">
+      <created>1585743366962</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585743366962</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="ElasticsearchTests_mappingTest - 2020.03.12 at 00h 32m 03s.xml">
-      <configuration name="ElasticsearchTests.mappingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticsearchTests_mappingTest - 2020.03.12 at 00h 33m 44s.xml">
-      <configuration name="ElasticsearchTests.mappingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticsearchTests_mappingTest - 2020.03.12 at 00h 35m 31s.xml">
-      <configuration name="ElasticsearchTests.mappingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticsearchTests_mappingTest - 2020.03.12 at 00h 35m 50s.xml">
-      <configuration name="ElasticsearchTests.mappingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticsearchTests_mappingTest - 2020.03.12 at 00h 37m 23s.xml">
-      <configuration name="ElasticsearchTests.mappingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticsearchTests_mappingTest - 2020.03.12 at 00h 37m 43s.xml">
-      <configuration name="ElasticsearchTests.mappingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticsearchTests_mappingTest - 2020.03.12 at 00h 39m 07s.xml">
-      <configuration name="ElasticsearchTests.mappingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticsearchTests_mappingTest - 2020.03.12 at 00h 39m 32s.xml">
-      <configuration name="ElasticsearchTests.mappingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticsearchTests_mappingTest - 2020.03.12 at 00h 40m 21s.xml">
-      <configuration name="ElasticsearchTests.mappingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticsearchTests_mappingTest - 2020.03.12 at 00h 40m 51s.xml">
-      <configuration name="ElasticsearchTests.mappingTest" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -327,11 +324,15 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/elasticsearch" />
+    </ignored-roots>
     <MESSAGE value="init elastic search study" />
     <MESSAGE value="Add user save test" />
     <MESSAGE value="Add docker-compose.yml &#10;&#10;- elastic search&#10;- kibana" />
     <MESSAGE value="elastic search test" />
-    <option name="LAST_COMMIT_MESSAGE" value="elastic search test" />
+    <MESSAGE value="add logback init" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logback init" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -341,19 +342,92 @@
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="485" y="-915" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585742456296" />
-    <state x="424" y="-1006" key="CommitChangelistDialog2" timestamp="1585743328550">
+    <state x="424" y="-1006" key="CommitChangelistDialog2" timestamp="1585743390078">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="424" y="-1006" key="CommitChangelistDialog2/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743328550" />
-    <state x="338" y="-1041" key="SettingsEditor" timestamp="1585743306053">
+    <state x="424" y="-1006" key="CommitChangelistDialog2/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743390078" />
+    <state width="1868" height="360" key="GridCell.Tab.0.bottom" timestamp="1585753092994">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="291" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557121" />
+    <state width="1868" height="360" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585752693176" />
+    <state width="1868" height="360" key="GridCell.Tab.0.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585753092994" />
+    <state width="1868" height="291" key="GridCell.Tab.0.bottom/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635931" />
+    <state width="1868" height="360" key="GridCell.Tab.0.center" timestamp="1585753092991">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="291" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557117" />
+    <state width="1868" height="360" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585752693172" />
+    <state width="1868" height="360" key="GridCell.Tab.0.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585753092991" />
+    <state width="1868" height="291" key="GridCell.Tab.0.center/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635923" />
+    <state width="1868" height="360" key="GridCell.Tab.0.left" timestamp="1585753092990">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="291" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557116" />
+    <state width="1868" height="360" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585752693167" />
+    <state width="1868" height="360" key="GridCell.Tab.0.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585753092990" />
+    <state width="1868" height="291" key="GridCell.Tab.0.left/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635921" />
+    <state width="1868" height="360" key="GridCell.Tab.0.right" timestamp="1585753092993">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="291" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557119" />
+    <state width="1868" height="360" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585752693174" />
+    <state width="1868" height="360" key="GridCell.Tab.0.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585753092993" />
+    <state width="1868" height="291" key="GridCell.Tab.0.right/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635928" />
+    <state width="1868" height="360" key="GridCell.Tab.1.bottom" timestamp="1585753092999">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="291" key="GridCell.Tab.1.bottom/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557128" />
+    <state width="1868" height="360" key="GridCell.Tab.1.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585752692955" />
+    <state width="1868" height="360" key="GridCell.Tab.1.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585753092999" />
+    <state width="1868" height="360" key="GridCell.Tab.1.center" timestamp="1585753092996">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="291" key="GridCell.Tab.1.center/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557125" />
+    <state width="1868" height="360" key="GridCell.Tab.1.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585752692949" />
+    <state width="1868" height="360" key="GridCell.Tab.1.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585753092996" />
+    <state width="1868" height="360" key="GridCell.Tab.1.left" timestamp="1585753092995">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="291" key="GridCell.Tab.1.left/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557123" />
+    <state width="1868" height="360" key="GridCell.Tab.1.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585752692947" />
+    <state width="1868" height="360" key="GridCell.Tab.1.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585753092995" />
+    <state width="1868" height="360" key="GridCell.Tab.1.right" timestamp="1585753092998">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="291" key="GridCell.Tab.1.right/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557127" />
+    <state width="1868" height="360" key="GridCell.Tab.1.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585752692951" />
+    <state width="1868" height="360" key="GridCell.Tab.1.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585753092998" />
+    <state width="1868" height="360" key="GridCell.Tab.2.bottom" timestamp="1585753093005">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="360" key="GridCell.Tab.2.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585752692963" />
+    <state width="1868" height="360" key="GridCell.Tab.2.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585753093005" />
+    <state width="1868" height="360" key="GridCell.Tab.2.center" timestamp="1585753093002">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="360" key="GridCell.Tab.2.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585752692959" />
+    <state width="1868" height="360" key="GridCell.Tab.2.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585753093002" />
+    <state width="1868" height="360" key="GridCell.Tab.2.left" timestamp="1585753093000">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="360" key="GridCell.Tab.2.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585752692957" />
+    <state width="1868" height="360" key="GridCell.Tab.2.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585753093000" />
+    <state width="1868" height="360" key="GridCell.Tab.2.right" timestamp="1585753093003">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1868" height="360" key="GridCell.Tab.2.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585752692961" />
+    <state width="1868" height="360" key="GridCell.Tab.2.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585753093003" />
+    <state x="338" y="-1041" key="SettingsEditor" timestamp="1585743629008">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="338" y="-989" key="SettingsEditor/0.-1080.1920.1080/-1440.-1057.1440.2537/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585742971922" />
-    <state x="338" y="-1041" key="SettingsEditor/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743306053" />
-    <state width="625" height="500" key="SwitcherDM" timestamp="1585743218409">
+    <state x="338" y="-1041" key="SettingsEditor/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743629008" />
+    <state width="625" height="616" key="SwitcherDM" timestamp="1585749965542">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="625" height="500" key="SwitcherDM/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743218409" />
+    <state width="625" height="616" key="SwitcherDM/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585749965542" />
+    <state width="625" height="500" key="SwitcherDM/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743613572" />
     <state x="159" y="-833" width="1602" height="687" key="new project wizard" timestamp="1585742623038">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
@@ -385,90 +459,7 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.25152308" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>elasticsearch</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.25152308" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>open-jdk-12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spring_study$LogbackApplication.ic" NAME="LogbackApplication Coverage Results" MODIFIED="1585747919917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
