@@ -33,11 +33,6 @@ class ExampleAspect {
 
     @After("@annotation(LogExecutionTime)")
     fun after(joinPoint: JoinPoint) {
-        log.info("args: {}", joinPoint.args)
-        log.info("kind: {}", joinPoint.kind)
-        log.info("sourceLocation: {}", joinPoint.sourceLocation)
-        log.info("staticPart: {}", joinPoint.staticPart)
-        log.info("this: {}", joinPoint.`this`)
         log.info("after")
     }
 

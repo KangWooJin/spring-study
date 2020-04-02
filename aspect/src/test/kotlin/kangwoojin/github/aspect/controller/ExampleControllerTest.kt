@@ -19,7 +19,6 @@ internal class ExampleControllerTest(@Autowired private val mockMvc: MockMvc) {
     @Test
     internal fun aspectTest() {
         val result = mockMvc.get("/around")
-                .andDo { log() }
                 .andExpect { status { is2xxSuccessful } }
                 .andReturn()
 
