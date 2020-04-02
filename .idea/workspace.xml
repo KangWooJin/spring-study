@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="add logback init">
-      <change afterPath="$PROJECT_DIR$/logback/src/main/java/kangwoojin/github/io/demo/service/LogbackTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logback/src/main/resources/logback-spring.xml" afterDir="false" />
+    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/aspect/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aspect/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aspect/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aspect/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aspect/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aspect/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aspect/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aspect/src/main/kotlin/kangwoojin/github/aspect/AspectApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aspect/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aspect/src/test/kotlin/kangwoojin/github/aspect/AspectApplicationTests.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logback/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/logback/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logback/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/logback/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logback/src/test/java/kangwoojin/github/io/demo/LogBackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/logback/src/test/java/kangwoojin/github/io/demo/LogBackTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +20,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/aspect">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/elasticsearch">
       <ProjectState />
     </projectState>
@@ -224,6 +232,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AspectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="aspect.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kangwoojin.github.aspect.AspectApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ElasticsearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="elasticsearch.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="kangwoojin.github.io.elasticsearch.ElasticsearchApplication" />
@@ -264,7 +279,8 @@
       <workItem from="1583929696314" duration="10287000" />
       <workItem from="1585742409816" duration="1006000" />
       <workItem from="1585743450961" duration="7586000" />
-      <workItem from="1585753114871" duration="597000" />
+      <workItem from="1585753114871" duration="778000" />
+      <workItem from="1585827207142" duration="251000" />
     </task>
     <task id="LOCAL-00001" summary="init elastic search study">
       <created>1583676715935</created>
@@ -315,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585743366962</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add logback test">
+      <created>1585782542858</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585782542858</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +355,8 @@
     <MESSAGE value="Add docker-compose.yml &#10;&#10;- elastic search&#10;- kibana" />
     <MESSAGE value="elastic search test" />
     <MESSAGE value="add logback init" />
-    <option name="LAST_COMMIT_MESSAGE" value="add logback init" />
+    <MESSAGE value="add logback test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logback test" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -342,9 +366,10 @@
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="485" y="-915" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585742456296" />
-    <state x="424" y="-1006" key="CommitChangelistDialog2" timestamp="1585743390078">
+    <state x="424" y="-1006" key="CommitChangelistDialog2" timestamp="1585782542638">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
+    <state x="424" y="-1006" key="CommitChangelistDialog2/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585782542638" />
     <state x="424" y="-1006" key="CommitChangelistDialog2/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743390078" />
     <state width="1868" height="360" key="GridCell.Tab.0.bottom" timestamp="1585753092994">
       <screen x="0" y="-1080" width="1920" height="1080" />
@@ -428,9 +453,14 @@
     </state>
     <state width="625" height="616" key="SwitcherDM/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585749965542" />
     <state width="625" height="500" key="SwitcherDM/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743613572" />
-    <state x="159" y="-833" width="1602" height="687" key="new project wizard" timestamp="1585742623038">
+    <state x="460" y="-863" key="Vcs.Push.Dialog.v2" timestamp="1585782546290">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
+    <state x="460" y="-863" key="Vcs.Push.Dialog.v2/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585782546290" />
+    <state x="159" y="-833" width="1602" height="687" key="new project wizard" timestamp="1585827257459">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="159" y="-833" key="new project wizard/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585827257459" />
     <state x="159" y="-833" width="1602" height="687" key="new project wizard/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585742623038" />
   </component>
   <component name="XDebuggerManager">
