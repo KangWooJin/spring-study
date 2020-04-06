@@ -65,7 +65,6 @@ querydsl {
     library = "com.querydsl:querydsl-apt"
     jpa = true
     querydslSourcesDir = querydslSrcDir
-    querydslDefault = true
 }
 
 sourceSets {
