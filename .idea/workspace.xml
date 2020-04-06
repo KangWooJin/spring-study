@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aspect/src/main/kotlin/kangwoojin/github/aspect/service/SuperService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/querydsl/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/querydsl/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/querydsl/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/querydsl/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/querydsl/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/querydsl/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/querydsl/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/querydsl/src/main/kotlin/kangwoojin/github/io/querydsl/QuerydslApplication.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/querydsl/src/main/kotlin/kangwoojin/github/io/querydsl/user/User.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/querydsl/src/main/kotlin/kangwoojin/github/io/querydsl/user/UserRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/querydsl/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/querydsl/src/test/kotlin/kangwoojin/github/io/querydsl/QuerydslApplicationTests.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/querydsl/src/test/kotlin/kangwoojin/github/io/querydsl/user/UserRepositoryTest.kt" afterDir="false" />
+    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="Add query dsl project init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aspect/src/main/kotlin/kangwoojin/github/aspect/service/ExampleService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/aspect/src/main/kotlin/kangwoojin/github/aspect/service/ExampleService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/querydsl/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +27,28 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/querydsl">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="querydsl" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="querydsl" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="querydsl" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -308,7 +313,7 @@
       <workItem from="1585827207142" duration="10884000" />
       <workItem from="1585885268366" duration="268000" />
       <workItem from="1585904567895" duration="178000" />
-      <workItem from="1586177752884" duration="1826000" />
+      <workItem from="1586177752884" duration="3389000" />
     </task>
     <task id="LOCAL-00001" summary="init elastic search study">
       <created>1583676715935</created>
@@ -387,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585838437293</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add query dsl project init">
+      <created>1586179880669</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1586179880669</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +419,8 @@
     <MESSAGE value="add logback test" />
     <MESSAGE value="add spring boot aspect init" />
     <MESSAGE value="Add aspect example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add aspect example" />
+    <MESSAGE value="Add query dsl project init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add query dsl project init" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -434,57 +447,57 @@
     </state>
     <state x="424" y="-1006" key="CommitChangelistDialog2/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585838437065" />
     <state x="424" y="-1006" key="CommitChangelistDialog2/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743390078" />
-    <state width="1868" height="493" key="GridCell.Tab.0.bottom" timestamp="1586179491031">
+    <state width="1868" height="493" key="GridCell.Tab.0.bottom" timestamp="1586181170805">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557121" />
-    <state width="1868" height="493" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586179491031" />
+    <state width="1868" height="493" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170805" />
     <state width="1868" height="493" key="GridCell.Tab.0.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586179332431" />
     <state width="1868" height="291" key="GridCell.Tab.0.bottom/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635931" />
-    <state width="1868" height="493" key="GridCell.Tab.0.center" timestamp="1586179491027">
+    <state width="1868" height="493" key="GridCell.Tab.0.center" timestamp="1586181170798">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557117" />
-    <state width="1868" height="493" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586179491027" />
+    <state width="1868" height="493" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170798" />
     <state width="1868" height="493" key="GridCell.Tab.0.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586179332428" />
     <state width="1868" height="291" key="GridCell.Tab.0.center/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635923" />
-    <state width="1868" height="493" key="GridCell.Tab.0.left" timestamp="1586179491026">
+    <state width="1868" height="493" key="GridCell.Tab.0.left" timestamp="1586181170791">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557116" />
-    <state width="1868" height="493" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586179491026" />
+    <state width="1868" height="493" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170791" />
     <state width="1868" height="493" key="GridCell.Tab.0.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586179332426" />
     <state width="1868" height="291" key="GridCell.Tab.0.left/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635921" />
-    <state width="1868" height="493" key="GridCell.Tab.0.right" timestamp="1586179491029">
+    <state width="1868" height="493" key="GridCell.Tab.0.right" timestamp="1586181170802">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557119" />
-    <state width="1868" height="493" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586179491029" />
+    <state width="1868" height="493" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170802" />
     <state width="1868" height="493" key="GridCell.Tab.0.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586179332429" />
     <state width="1868" height="291" key="GridCell.Tab.0.right/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635928" />
-    <state width="1868" height="360" key="GridCell.Tab.1.bottom" timestamp="1585904745721">
+    <state width="1868" height="493" key="GridCell.Tab.1.bottom" timestamp="1586181170816">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.1.bottom/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557128" />
-    <state width="1868" height="360" key="GridCell.Tab.1.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585833741487" />
+    <state width="1868" height="493" key="GridCell.Tab.1.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170816" />
     <state width="1868" height="360" key="GridCell.Tab.1.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585904745721" />
-    <state width="1868" height="360" key="GridCell.Tab.1.center" timestamp="1585904745718">
+    <state width="1868" height="493" key="GridCell.Tab.1.center" timestamp="1586181170811">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.1.center/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557125" />
-    <state width="1868" height="360" key="GridCell.Tab.1.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585833741485" />
+    <state width="1868" height="493" key="GridCell.Tab.1.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170811" />
     <state width="1868" height="360" key="GridCell.Tab.1.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585904745718" />
-    <state width="1868" height="360" key="GridCell.Tab.1.left" timestamp="1585904745717">
+    <state width="1868" height="493" key="GridCell.Tab.1.left" timestamp="1586181170807">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.1.left/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557123" />
-    <state width="1868" height="360" key="GridCell.Tab.1.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585833741484" />
+    <state width="1868" height="493" key="GridCell.Tab.1.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170807" />
     <state width="1868" height="360" key="GridCell.Tab.1.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585904745717" />
-    <state width="1868" height="360" key="GridCell.Tab.1.right" timestamp="1585904745719">
+    <state width="1868" height="493" key="GridCell.Tab.1.right" timestamp="1586181170813">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.1.right/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557127" />
-    <state width="1868" height="360" key="GridCell.Tab.1.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585833741486" />
+    <state width="1868" height="493" key="GridCell.Tab.1.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170813" />
     <state width="1868" height="360" key="GridCell.Tab.1.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585904745719" />
     <state width="1868" height="360" key="GridCell.Tab.2.bottom" timestamp="1585838636366">
       <screen x="0" y="-1080" width="1920" height="1080" />
@@ -571,11 +584,6 @@
           <url>file://$PROJECT_DIR$/aspect/src/main/kotlin/kangwoojin/github/aspect/service/ExampleService.kt</url>
           <line>12</line>
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/aspect/src/main/kotlin/kangwoojin/github/aspect/service/SuperService.kt</url>
-          <line>11</line>
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/aspect/src/main/kotlin/kangwoojin/github/aspect/aspect/ExampleAspect.kt</url>
