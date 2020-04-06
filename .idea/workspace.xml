@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="Add query dsl project init">
+    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/querydsl/src/main/generated/kangwoojin/github/io/querydsl/user/QUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/querydsl/src/main/java/kangwoojin/github/io/querydsl/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/querydsl/src/main/java/kangwoojin/github/io/querydsl/user/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/querydsl/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/querydsl/src/test/java/kangwoojin/github/io/querydsl/QuerydslApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/src/test/java/kangwoojin/github/io/querydsl/QuerydslApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +50,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="querydsl" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="querydsl" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="other" type="c8890929:TasksNode$1" />
               </path>
             </expand>
@@ -61,9 +71,10 @@
         <option value="Kotlin Script" />
         <option value="spring-beans.schema" />
         <option value="Python Script" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="Kotlin File" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -137,85 +148,94 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.QuerydslApplication">
-    <configuration name="UserRepositoryTest.insertTest$querydsl" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.querydsl [compileQuerydsl]">
+    <configuration name="querydsl [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/querydsl" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;kangwoojin.github.io.querydsl.user.UserRepositoryTest.insertTest$querydsl&quot;" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ExampleControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aspect.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kangwoojin.github.aspect.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="kangwoojin.github.aspect.controller" />
-      <option name="MAIN_CLASS_NAME" value="kangwoojin.github.aspect.controller.ExampleControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="querydsl [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/querydsl" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="ExampleControllerTest.aspectTest$aspect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aspect.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kangwoojin.github.aspect.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="kangwoojin.github.aspect.controller" />
-      <option name="MAIN_CLASS_NAME" value="kangwoojin.github.aspect.controller.ExampleControllerTest" />
-      <option name="METHOD_NAME" value="aspectTest$aspect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="querydsl [compileQuerydsl]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/querydsl" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileQuerydsl" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="ExampleControllerTest.aspectTest$aspect_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aspect.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kangwoojin.github.aspect.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="kangwoojin.github.aspect.controller" />
-      <option name="MAIN_CLASS_NAME" value="kangwoojin.github.aspect.controller.ExampleControllerTest" />
-      <option name="METHOD_NAME" value="aspectTest$aspect_test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="querydsl [querydslClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/querydsl" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="querydslClasses" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="UserRepositoryTest.insertTest$querydsl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuerydslApplicationTests.queryDslTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="querydsl.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kangwoojin.github.io.querydsl.user.*" />
+          <option name="PATTERN" value="kangwoojin.github.io.querydsl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="kangwoojin.github.io.querydsl.user" />
-      <option name="MAIN_CLASS_NAME" value="kangwoojin.github.io.querydsl.user.UserRepositoryTest" />
-      <option name="METHOD_NAME" value="insertTest$querydsl" />
+      <option name="PACKAGE_NAME" value="kangwoojin.github.io.querydsl" />
+      <option name="MAIN_CLASS_NAME" value="kangwoojin.github.io.querydsl.QuerydslApplicationTests" />
+      <option name="METHOD_NAME" value="queryDslTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -285,11 +305,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserRepositoryTest.insertTest$querydsl" />
-        <item itemvalue="Gradle.UserRepositoryTest.insertTest$querydsl" />
-        <item itemvalue="JUnit.ExampleControllerTest" />
-        <item itemvalue="JUnit.ExampleControllerTest.aspectTest$aspect_test" />
-        <item itemvalue="JUnit.ExampleControllerTest.aspectTest$aspect" />
+        <item itemvalue="Gradle.querydsl [compileQuerydsl]" />
+        <item itemvalue="Gradle.querydsl [querydslClasses]" />
+        <item itemvalue="JUnit.QuerydslApplicationTests.queryDslTest" />
+        <item itemvalue="Gradle.querydsl [clean]" />
+        <item itemvalue="Gradle.querydsl [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -313,7 +333,7 @@
       <workItem from="1585827207142" duration="10884000" />
       <workItem from="1585885268366" duration="268000" />
       <workItem from="1585904567895" duration="178000" />
-      <workItem from="1586177752884" duration="3389000" />
+      <workItem from="1586177752884" duration="5054000" />
     </task>
     <task id="LOCAL-00001" summary="init elastic search study">
       <created>1583676715935</created>
@@ -399,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586179880669</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add query dsl gradle">
+      <created>1586181414949</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1586181414950</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,7 +447,8 @@
     <MESSAGE value="add spring boot aspect init" />
     <MESSAGE value="Add aspect example" />
     <MESSAGE value="Add query dsl project init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add query dsl project init" />
+    <MESSAGE value="Add query dsl gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add query dsl gradle" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -442,62 +470,62 @@
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="635" y="-843" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586178695467" />
-    <state x="424" y="-1006" key="CommitChangelistDialog2" timestamp="1585838437065">
+    <state x="424" y="-1006" key="CommitChangelistDialog2" timestamp="1586181414745">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="424" y="-1006" key="CommitChangelistDialog2/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585838437065" />
+    <state x="424" y="-1006" key="CommitChangelistDialog2/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586181414745" />
     <state x="424" y="-1006" key="CommitChangelistDialog2/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743390078" />
-    <state width="1868" height="493" key="GridCell.Tab.0.bottom" timestamp="1586181170805">
+    <state width="1868" height="493" key="GridCell.Tab.0.bottom" timestamp="1586183232014">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557121" />
-    <state width="1868" height="493" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170805" />
-    <state width="1868" height="493" key="GridCell.Tab.0.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586179332431" />
+    <state width="1868" height="493" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181550669" />
+    <state width="1868" height="493" key="GridCell.Tab.0.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586183232014" />
     <state width="1868" height="291" key="GridCell.Tab.0.bottom/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635931" />
-    <state width="1868" height="493" key="GridCell.Tab.0.center" timestamp="1586181170798">
+    <state width="1868" height="493" key="GridCell.Tab.0.center" timestamp="1586183232010">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557117" />
-    <state width="1868" height="493" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170798" />
-    <state width="1868" height="493" key="GridCell.Tab.0.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586179332428" />
+    <state width="1868" height="493" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181550665" />
+    <state width="1868" height="493" key="GridCell.Tab.0.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586183232010" />
     <state width="1868" height="291" key="GridCell.Tab.0.center/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635923" />
-    <state width="1868" height="493" key="GridCell.Tab.0.left" timestamp="1586181170791">
+    <state width="1868" height="493" key="GridCell.Tab.0.left" timestamp="1586183232008">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557116" />
-    <state width="1868" height="493" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170791" />
-    <state width="1868" height="493" key="GridCell.Tab.0.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586179332426" />
+    <state width="1868" height="493" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181550662" />
+    <state width="1868" height="493" key="GridCell.Tab.0.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586183232008" />
     <state width="1868" height="291" key="GridCell.Tab.0.left/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635921" />
-    <state width="1868" height="493" key="GridCell.Tab.0.right" timestamp="1586181170802">
+    <state width="1868" height="493" key="GridCell.Tab.0.right" timestamp="1586183232012">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557119" />
-    <state width="1868" height="493" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170802" />
-    <state width="1868" height="493" key="GridCell.Tab.0.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586179332429" />
+    <state width="1868" height="493" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181550667" />
+    <state width="1868" height="493" key="GridCell.Tab.0.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586183232012" />
     <state width="1868" height="291" key="GridCell.Tab.0.right/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635928" />
-    <state width="1868" height="493" key="GridCell.Tab.1.bottom" timestamp="1586181170816">
+    <state width="1868" height="493" key="GridCell.Tab.1.bottom" timestamp="1586181550681">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.1.bottom/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557128" />
-    <state width="1868" height="493" key="GridCell.Tab.1.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170816" />
+    <state width="1868" height="493" key="GridCell.Tab.1.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181550681" />
     <state width="1868" height="360" key="GridCell.Tab.1.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585904745721" />
-    <state width="1868" height="493" key="GridCell.Tab.1.center" timestamp="1586181170811">
+    <state width="1868" height="493" key="GridCell.Tab.1.center" timestamp="1586181550677">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.1.center/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557125" />
-    <state width="1868" height="493" key="GridCell.Tab.1.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170811" />
+    <state width="1868" height="493" key="GridCell.Tab.1.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181550677" />
     <state width="1868" height="360" key="GridCell.Tab.1.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585904745718" />
-    <state width="1868" height="493" key="GridCell.Tab.1.left" timestamp="1586181170807">
+    <state width="1868" height="493" key="GridCell.Tab.1.left" timestamp="1586181550671">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.1.left/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557123" />
-    <state width="1868" height="493" key="GridCell.Tab.1.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170807" />
+    <state width="1868" height="493" key="GridCell.Tab.1.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181550671" />
     <state width="1868" height="360" key="GridCell.Tab.1.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585904745717" />
-    <state width="1868" height="493" key="GridCell.Tab.1.right" timestamp="1586181170813">
+    <state width="1868" height="493" key="GridCell.Tab.1.right" timestamp="1586181550679">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.1.right/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1585746557127" />
-    <state width="1868" height="493" key="GridCell.Tab.1.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181170813" />
+    <state width="1868" height="493" key="GridCell.Tab.1.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586181550679" />
     <state width="1868" height="360" key="GridCell.Tab.1.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585904745719" />
     <state width="1868" height="360" key="GridCell.Tab.2.bottom" timestamp="1585838636366">
       <screen x="0" y="-1080" width="1920" height="1080" />
@@ -525,10 +553,10 @@
     <state x="338" y="-1041" key="SettingsEditor/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586178845143" />
     <state x="338" y="-989" key="SettingsEditor/0.-1080.1920.1080/-1440.-1057.1440.2537/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585742971922" />
     <state x="338" y="-1041" key="SettingsEditor/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743629008" />
-    <state width="625" height="616" key="SwitcherDM" timestamp="1586179330713">
+    <state width="625" height="616" key="SwitcherDM" timestamp="1586182400564">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="625" height="616" key="SwitcherDM/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586179330713" />
+    <state width="625" height="616" key="SwitcherDM/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586182400564" />
     <state width="625" height="500" key="SwitcherDM/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743613572" />
     <state x="460" y="-863" key="Vcs.Push.Dialog.v2" timestamp="1585838439143">
       <screen x="0" y="-1080" width="1920" height="1080" />
