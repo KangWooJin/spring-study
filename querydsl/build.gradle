@@ -60,6 +60,7 @@ test {
 }
 
 def querydslSrcDir = 'src/main/generated'
+def querydslTestDir = 'src/test/generated'
 
 querydsl {
     library = "com.querydsl:querydsl-apt"
@@ -73,4 +74,12 @@ sourceSets {
             srcDirs = ['src/main/java', querydslSrcDir]
         }
     }
+}
+
+project.afterEvaluate {
+    project.tasks.compileQuerydsl.options.compilerArgs = [
+            "-proc:only",
+            "-processor", project.querydsl.processors() +
+                    ',lombok.launch.AnnotationProcessorHider$AnnotationProcessor'
+    ]
 }
