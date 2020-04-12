@@ -8,10 +8,9 @@ import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 internal class ExampleRestTemplateTest(@Autowired private val exampleRestTemplate: ExampleRestTemplate) {
     private val log = LoggerFactory.getLogger(javaClass)
-
 
     @Test
     internal fun exampleTest() {
@@ -23,7 +22,12 @@ internal class ExampleRestTemplateTest(@Autowired private val exampleRestTemplat
     @Test
     internal fun badRequestTest() {
         assertThrows<BadRequest> {
-            exampleRestTemplate.failExample()
+            val failExample = exampleRestTemplate.failExample()
+
+            assertThat(failExample).isNotNull()
+            assertThat(failExample?.message).isNotNull()
+            assertThat(failExample?.uuid).isNotNull()
+            assertThat(failExample?.version).isNotNull()
         }
     }
 

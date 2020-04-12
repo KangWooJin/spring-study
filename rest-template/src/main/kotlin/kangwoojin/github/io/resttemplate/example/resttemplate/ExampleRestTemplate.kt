@@ -30,17 +30,17 @@ class ExampleRestTemplate {
     }
 
     @Throws(BadRequest::class)
-    fun failExample(): String? {
-        var result: ResponseEntity<String>? = null
+    fun failExample(): ExampleController.ExampleResponse? {
+        var result: ResponseEntity<ExampleController.ExampleResponse>? = null
         try {
-            result = restTemplate.getForEntity<String>("http://localhost:8080/badRequest")
+            result = restTemplate.postForEntity<ExampleController.ExampleResponse>("http://localhost:8080/badRequest")
         } catch (e: HttpClientErrorException) {
             log.error("exception {}", e.message, e)
             throw BadRequest(e)
         }
         print(result)
 
-        return result.body?.toString()
+        return result.body
     }
 
     fun failExampleByErrorHandler(): ExampleController.ExampleResponse? {
