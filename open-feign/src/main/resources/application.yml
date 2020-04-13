@@ -1,0 +1,10 @@
+feign:
+  compression:
+    request:
+      enabled: true
+    response:
+      enabled: true
+  okhttp:
+    enabled: true
+
+#logging.level.kangwooijn.github.io.openfeign.feign.ExampleClient: DEBUG
