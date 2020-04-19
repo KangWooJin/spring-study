@@ -6,11 +6,13 @@ import kangwoojin.github.io.openfeign.feign.Params
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
+import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
 class OpenFeignApplicationTests(@Autowired private val exampleClient: ExampleClient) {
+    private val log = LoggerFactory.getLogger(javaClass)
 
     @Test
     fun successTest() {
@@ -36,7 +38,7 @@ class OpenFeignApplicationTests(@Autowired private val exampleClient: ExampleCli
     }
 
     @Test
-    fun errorTest() {
+    fun errorRetryTest() {
         assertThrows<RetryableException> {
             val error = exampleClient.error(500)
 
@@ -51,5 +53,12 @@ class OpenFeignApplicationTests(@Autowired private val exampleClient: ExampleCli
         } catch (ex: Exception) {
             println(ex)
         }
+    }
+
+    @Test
+    fun responseTest() {
+        val response = exampleClient.response(500)
+
+        log.info("response {}", response)
     }
 }

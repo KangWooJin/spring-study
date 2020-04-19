@@ -29,5 +29,10 @@ class ExampleController {
     fun error(@PathVariable code: Int): ResponseEntity<Int> {
         return ResponseEntity.status(code).body(code)
     }
+
+    @GetMapping("/response/{code}")
+    fun response(@PathVariable code: Int): ResponseEntity<Int> {
+        return ResponseEntity.status(code).body(code)
+    }
 }
 

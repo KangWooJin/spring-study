@@ -1,5 +1,6 @@
 package kangwoojin.github.io.openfeign.feign
 
+import feign.Response
 import org.apache.juli.logging.LogConfigurationException
 import org.springframework.cloud.openfeign.FeignClient
 import org.springframework.cloud.openfeign.SpringQueryMap
@@ -24,4 +25,7 @@ interface ExampleClient {
 
     @GetMapping("/error/{code}")
     fun error(@PathVariable(name = "code") code: Int): String
+
+    @GetMapping("/response/{code}")
+    fun response(@PathVariable(name = "code") code: Int): Response
 }
