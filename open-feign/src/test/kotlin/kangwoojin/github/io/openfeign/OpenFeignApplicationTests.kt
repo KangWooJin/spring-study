@@ -1,9 +1,11 @@
 package kangwoojin.github.io.openfeign
 
+import feign.RetryableException
 import kangwoojin.github.io.openfeign.feign.ExampleClient
 import kangwoojin.github.io.openfeign.feign.Params
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 
@@ -27,9 +29,27 @@ class OpenFeignApplicationTests(@Autowired private val exampleClient: ExampleCli
     @Test
     fun successQueryMapTest() {
 
-        val success = exampleClient.successQueryMap(Params("test1", "test2"))
+        val params = Params("test1", "test2")
+        val success = exampleClient.successQueryMap(params)
 
         assertThat(success).isEqualTo("test1 + test2")
     }
 
+    @Test
+    fun errorTest() {
+        assertThrows<RetryableException> {
+            val error = exampleClient.error(500)
+
+            assertThat(error).isNotEmpty()
+        }
+    }
+
+    @Test
+    fun runtimeExceptionTest() {
+        try {
+            val error = exampleClient.error(400)
+        } catch (ex: Exception) {
+            println(ex)
+        }
+    }
 }

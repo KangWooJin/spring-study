@@ -6,7 +6,11 @@ import org.springframework.cloud.openfeign.SpringQueryMap
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 
-@FeignClient(name = "example", url = "http://localhost:8080", configuration = [LogConfigurationException::class])
+@FeignClient(name = "example", url = "http://localhost:8080",
+        configuration = [
+            LogConfigurationException::class,
+            RetryConfiguration::class
+        ])
 interface ExampleClient {
 
     @GetMapping("/success")
@@ -17,4 +21,7 @@ interface ExampleClient {
 
     @GetMapping("/success/queryMap")
     fun successQueryMap(@SpringQueryMap params: Params): String
+
+    @GetMapping("/error/{code}")
+    fun error(@PathVariable(name = "code") code: Int): String
 }
