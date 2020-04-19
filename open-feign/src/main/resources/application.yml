@@ -8,3 +8,15 @@ feign:
     enabled: true
 
 #logging.level.kangwooijn.github.io.openfeign.feign.ExampleClient: DEBUG
+logging:
+  level:
+    root: debug
+    sun:
+      rmi: info
+    javax:
+      management: info
+    org:
+      springframework:
+        boot:
+          autoconfigure:
+            logging: info
