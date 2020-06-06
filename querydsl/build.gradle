@@ -60,7 +60,6 @@ test {
 }
 
 def querydslSrcDir = 'src/main/generated'
-def querydslTestDir = 'src/test/generated'
 
 querydsl {
     library = "com.querydsl:querydsl-apt"

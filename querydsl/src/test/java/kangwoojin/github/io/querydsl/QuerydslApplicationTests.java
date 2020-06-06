@@ -2,21 +2,27 @@ package kangwoojin.github.io.querydsl;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import javax.transaction.Transactional;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.boot.test.autoconfigure.orm.jpa.AutoConfigureTestEntityManager;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
-
-import com.querydsl.jpa.impl.JPAQuery;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import kangwoojin.github.io.querydsl.user.QUser;
 import kangwoojin.github.io.querydsl.user.User;
+import kangwoojin.github.io.querydsl.user.UserService;
 
-@DataJpaTest
+@AutoConfigureTestEntityManager
+@Transactional
+@SpringBootTest
 class QuerydslApplicationTests {
     QUser qUser = QUser.user;
     @Autowired
     private TestEntityManager em;
+    @Autowired
+    private UserService userService;
 
     @Test
     void entityTest() {
@@ -35,12 +41,7 @@ class QuerydslApplicationTests {
 
         User saved = em.persist(user);
 
-        JPAQuery<User> query = new JPAQuery<>(em.getEntityManager());
-
-        User actual = query.from(qUser)
-                           .where(qUser.name.eq("woojin").and(qUser.id.eq(saved.getId())))
-
-                           .fetchOne();
+        User actual = userService.findByNameAndId(saved.getName(), saved.getId());
 
         assertThat(saved).isNotNull();
         assertThat(saved.getId()).isEqualTo(actual.getId());
