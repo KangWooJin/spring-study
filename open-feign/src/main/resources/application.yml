@@ -6,8 +6,9 @@ feign:
       enabled: true
   okhttp:
     enabled: true
+  example-api:
+    url: "http://localhost:8080"
 
-#logging.level.kangwooijn.github.io.openfeign.feign.ExampleClient: DEBUG
 logging:
   level:
     root: debug
@@ -20,3 +21,4 @@ logging:
         boot:
           autoconfigure:
             logging: info
+

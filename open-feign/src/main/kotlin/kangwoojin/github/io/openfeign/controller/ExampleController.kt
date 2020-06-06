@@ -5,6 +5,7 @@ import org.springframework.cloud.openfeign.SpringQueryMap
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
@@ -33,6 +34,16 @@ class ExampleController {
     @GetMapping("/response/{code}")
     fun response(@PathVariable code: Int): ResponseEntity<Int> {
         return ResponseEntity.status(code).body(code)
+    }
+
+    @GetMapping("/list/{ids}")
+    fun response(@PathVariable ids: List<Int>): ResponseEntity<List<Int>> {
+        return ResponseEntity.ok(ids)
+    }
+
+    @GetMapping("/list")
+    fun listByRequestParam(@RequestParam ids: List<Int>): ResponseEntity<List<Int>> {
+        return ResponseEntity.ok(ids)
     }
 }
 

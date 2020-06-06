@@ -2,6 +2,7 @@ package kangwoojin.github.io.openfeign
 
 import feign.RetryableException
 import kangwoojin.github.io.openfeign.feign.ExampleClient
+import kangwoojin.github.io.openfeign.feign.GlobalClient
 import kangwoojin.github.io.openfeign.feign.Params
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
@@ -11,7 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class OpenFeignApplicationTests(@Autowired private val exampleClient: ExampleClient) {
+class OpenFeignApplicationTests(@Autowired private val exampleClient: ExampleClient,
+                                @Autowired private val globalClient: GlobalClient) {
     private val log = LoggerFactory.getLogger(javaClass)
 
     @Test
@@ -60,5 +62,35 @@ class OpenFeignApplicationTests(@Autowired private val exampleClient: ExampleCli
         val response = exampleClient.response(500)
 
         log.info("response {}", response)
+    }
+
+    @Test
+    fun globalClientTest() {
+        assertThrows<RetryableException> {
+            val error = exampleClient.error(500)
+
+            assertThat(error).isNotEmpty()
+        }
+    }
+
+    @Test
+    internal fun listTest() {
+        val response = exampleClient.list(arrayListOf(1, 2, 3, 4))
+
+        log.info("{}", response)
+    }
+
+    @Test
+    internal fun listByRequestParamTest() {
+//        val response = globalClient.listByRequestParam(arrayListOf(1, 2, 3, 4))
+
+//        log.info("{}", response)
+    }
+
+    @Test
+    internal fun listByRequestLineTest() {
+        val response = globalClient.listByRequestLine(arrayListOf(1, 2, 3, 4))
+
+        log.info("{}", response)
     }
 }
