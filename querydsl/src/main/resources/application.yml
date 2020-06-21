@@ -1,0 +1,8 @@
+logging.level:
+  org:
+    hibernate:
+      engine:
+        transaction:
+          internal: TRACE
+  org.springframework.orm: TRACE
+  org.springframework.transaction: TRACE
