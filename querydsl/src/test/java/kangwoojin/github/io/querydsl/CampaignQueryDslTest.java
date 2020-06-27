@@ -81,4 +81,28 @@ class CampaignQueryDslTest {
         assertThat(actual.getAmount()).isEqualTo(amount);
 
     }
+
+    @Test
+    void deleteTest() {
+        String name = RandomStringUtils.randomAlphabetic(5);
+        long amount = RandomUtils.nextLong();
+        Campaign campaign = generateCampaign(name, amount);
+
+        JPAQueryFactory jpaQueryFactory = new JPAQueryFactory(entityManager);
+        long count = jpaQueryFactory.delete(qCampaign)
+                                    .where(qCampaign.id.eq(campaign.getId()))
+                                    .execute();
+
+        assertThat(count).isEqualTo(1);
+
+        testEntityManager.clear();
+
+        JPAQuery<Campaign> query = new JPAQuery(entityManager);
+        Campaign actual = query.select(qCampaign)
+                               .from(qCampaign)
+                               .where(qCampaign.id.eq(campaign.getId()))
+                               .fetchOne();
+
+        assertThat(actual).isNull();
+    }
 }
