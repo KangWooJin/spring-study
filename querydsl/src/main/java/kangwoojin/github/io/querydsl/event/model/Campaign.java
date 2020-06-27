@@ -1,7 +1,9 @@
 package kangwoojin.github.io.querydsl.event.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -20,6 +22,6 @@ public class Campaign {
 
     private Long amount;
 
-    @OneToMany
-    private List<Event> events;
+    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "campaign")
+    private List<Event> events = new ArrayList<>();
 }

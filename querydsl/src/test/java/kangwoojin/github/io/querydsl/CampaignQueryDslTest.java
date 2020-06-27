@@ -2,6 +2,8 @@ package kangwoojin.github.io.querydsl;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 
 import org.apache.commons.lang3.RandomStringUtils;
@@ -12,15 +14,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 
+import com.querydsl.jpa.JPAExpressions;
 import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 import kangwoojin.github.io.querydsl.event.model.Campaign;
+import kangwoojin.github.io.querydsl.event.model.Event;
 import kangwoojin.github.io.querydsl.event.model.QCampaign;
+import kangwoojin.github.io.querydsl.event.model.QEvent;
 
 @DataJpaTest
 class CampaignQueryDslTest {
     QCampaign qCampaign = QCampaign.campaign;
+    QEvent qEvent = QEvent.event;
     @Autowired
     private TestEntityManager testEntityManager;
     EntityManager entityManager;
@@ -34,6 +40,9 @@ class CampaignQueryDslTest {
         Campaign campaign = new Campaign();
         campaign.setName(name);
         campaign.setAmount(amount);
+        Event event = new Event();
+        event.setAmount(5L);
+        campaign.setEvents(List.of(event));
         return testEntityManager.persist(campaign);
     }
 
@@ -104,5 +113,23 @@ class CampaignQueryDslTest {
                                .fetchOne();
 
         assertThat(actual).isNull();
+    }
+
+    @Test
+    void subQueryTest() {
+        String name = RandomStringUtils.randomAlphabetic(5);
+        long amount = 10L;
+        Campaign campaign = generateCampaign(name, amount);
+
+        JPAQuery<Campaign> query = new JPAQuery(entityManager);
+        Campaign actual = query.select(qCampaign)
+                               .from(qCampaign)
+                               .where(qCampaign.amount.gt(
+                                       JPAExpressions.select(qEvent.amount)
+                                                     .from(qEvent)
+                               ))
+                               .fetchOne();
+
+        assertThat(actual).isNotNull();
     }
 }
