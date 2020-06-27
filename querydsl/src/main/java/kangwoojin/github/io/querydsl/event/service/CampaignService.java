@@ -1,5 +1,7 @@
 package kangwoojin.github.io.querydsl.event.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,7 +19,7 @@ public class CampaignService {
 
     @Transactional
     public Campaign save_create(Campaign campaign) {
-        if (campaign.getEvent() != null) {
+        if (!campaign.getEvents().isEmpty()) {
 //            throw new RuntimeException("runtimeException");
         }
         return campaignRepository.save(campaign);
@@ -26,7 +28,7 @@ public class CampaignService {
     @Transactional
     public Campaign process(Event event) {
         Campaign campaign = new Campaign();
-        campaign.setEvent(event);
+        campaign.setEvents(List.of(event));
         campaign.setName("campaign");
 
         return save_create(campaign);

@@ -19,12 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="Add transaction test code">
+    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="Add testcode">
+      <change afterPath="$PROJECT_DIR$/querydsl/src/main/generated/kangwoojin/github/io/querydsl/event/model/QCampaign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/querydsl/src/main/generated/kangwoojin/github/io/querydsl/event/model/QEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/querydsl/src/test/java/kangwoojin/github/io/querydsl/CampaignQueryDslTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/querydsl/src/main/java/kangwoojin/github/io/querydsl/event/controller/CampaignController.java" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/src/main/java/kangwoojin/github/io/querydsl/event/controller/CampaignController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/querydsl/src/main/java/kangwoojin/github/io/querydsl/event/model/Campaign.java" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/src/main/java/kangwoojin/github/io/querydsl/event/model/Campaign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/querydsl/src/main/java/kangwoojin/github/io/querydsl/event/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/src/main/java/kangwoojin/github/io/querydsl/event/model/Event.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/querydsl/src/main/java/kangwoojin/github/io/querydsl/event/service/CampaignService.java" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/src/main/java/kangwoojin/github/io/querydsl/event/service/CampaignService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/querydsl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/querydsl/src/test/java/kangwoojin/github/io/querydsl/CampaignControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/src/test/java/kangwoojin/github/io/querydsl/CampaignControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,8 +199,8 @@
       <recent name="$PROJECT_DIR$/elasticsearch" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CampaignControllerTest.createTest">
-    <configuration name="querydsl [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="JUnit.CampaignQueryDslTest.selectByIdTest">
+    <configuration name="querydsl [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/querydsl" />
@@ -209,7 +211,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="assemble" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -217,7 +219,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="querydsl [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="querydsl [compileQuerydsl]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/querydsl" />
@@ -228,26 +230,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="querydsl [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/querydsl" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
+            <option value="compileQuerydsl" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -266,6 +249,22 @@
       <option name="PACKAGE_NAME" value="kangwoojin.github.io.querydsl" />
       <option name="MAIN_CLASS_NAME" value="kangwoojin.github.io.querydsl.CampaignControllerTest" />
       <option name="METHOD_NAME" value="createTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CampaignQueryDslTest.selectByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="querydsl.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kangwoojin.github.io.querydsl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kangwoojin.github.io.querydsl" />
+      <option name="MAIN_CLASS_NAME" value="kangwoojin.github.io.querydsl.CampaignQueryDslTest" />
+      <option name="METHOD_NAME" value="selectByIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -391,9 +390,6 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.querydsl [assemble]" />
-      <item itemvalue="Gradle.querydsl [build]" />
-      <item itemvalue="Gradle.querydsl [test]" />
       <item itemvalue="JUnit.CampaignServiceTest.transactionTest" />
       <item itemvalue="JUnit.CampaignControllerTest.createTest" />
       <item itemvalue="Kotlin script.build.gradle.kts" />
@@ -406,14 +402,17 @@
       <item itemvalue="Spring Boot.QuerydslApplication" />
       <item itemvalue="Spring Boot.RestTemplateApplication" />
       <item itemvalue="Spring Boot.VuejsApplication" />
+      <item itemvalue="Gradle.querydsl [clean]" />
+      <item itemvalue="Gradle.querydsl [compileQuerydsl]" />
+      <item itemvalue="JUnit.CampaignQueryDslTest.selectByIdTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CampaignQueryDslTest.selectByIdTest" />
+        <item itemvalue="Gradle.querydsl [compileQuerydsl]" />
+        <item itemvalue="Gradle.querydsl [clean]" />
         <item itemvalue="JUnit.CampaignControllerTest.createTest" />
         <item itemvalue="JUnit.CampaignServiceTest.transactionTest" />
-        <item itemvalue="Gradle.querydsl [test]" />
-        <item itemvalue="Gradle.querydsl [build]" />
-        <item itemvalue="Gradle.querydsl [assemble]" />
       </list>
     </recent_temporary>
   </component>
@@ -459,6 +458,7 @@
       <workItem from="1592654092576" duration="13528000" />
       <workItem from="1592832607654" duration="111000" />
       <workItem from="1593084109907" duration="1530000" />
+      <workItem from="1593257996989" duration="884000" />
     </task>
     <task id="LOCAL-00001" summary="init elastic search study">
       <created>1583676715935</created>
@@ -649,7 +649,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592746704306</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Add testcode">
+      <created>1593258018990</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1593258018990</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -696,7 +703,8 @@
     <MESSAGE value="Add vuejs init" />
     <MESSAGE value="Fix lint" />
     <MESSAGE value="Add transaction test code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add transaction test code" />
+    <MESSAGE value="Add testcode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add testcode" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -737,34 +745,34 @@
     <state x="424" y="-1006" key="CommitChangelistDialog2/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586691037568" />
     <state x="424" y="-1006" key="CommitChangelistDialog2/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1587277100330" />
     <state x="424" y="-1006" key="CommitChangelistDialog2/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743390078" />
-    <state width="1868" height="408" key="GridCell.Tab.0.bottom" timestamp="1593133077393">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1868" height="387" key="GridCell.Tab.0.bottom" timestamp="1593258697154">
+      <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="414" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1591509736064" />
+    <state width="1868" height="387" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593258697154" />
     <state width="1868" height="360" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1587299249989" />
     <state width="1868" height="408" key="GridCell.Tab.0.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593133077393" />
     <state width="1868" height="291" key="GridCell.Tab.0.bottom/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635931" />
     <state width="1868" height="372" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377882" />
-    <state width="1868" height="408" key="GridCell.Tab.0.center" timestamp="1593133077390">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1868" height="387" key="GridCell.Tab.0.center" timestamp="1593258697153">
+      <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="414" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1591509736062" />
+    <state width="1868" height="387" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593258697153" />
     <state width="1868" height="360" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1587299249971" />
     <state width="1868" height="408" key="GridCell.Tab.0.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593133077390" />
     <state width="1868" height="291" key="GridCell.Tab.0.center/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635923" />
     <state width="1868" height="372" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377880" />
-    <state width="1868" height="408" key="GridCell.Tab.0.left" timestamp="1593133077388">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1868" height="387" key="GridCell.Tab.0.left" timestamp="1593258697152">
+      <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="414" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1591509736061" />
+    <state width="1868" height="387" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593258697152" />
     <state width="1868" height="360" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1587299249966" />
     <state width="1868" height="408" key="GridCell.Tab.0.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593133077388" />
     <state width="1868" height="291" key="GridCell.Tab.0.left/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635921" />
     <state width="1868" height="372" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377878" />
-    <state width="1868" height="408" key="GridCell.Tab.0.right" timestamp="1593133077391">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1868" height="387" key="GridCell.Tab.0.right" timestamp="1593258697153">
+      <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="414" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1591509736063" />
+    <state width="1868" height="387" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593258697153" />
     <state width="1868" height="360" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1587299249974" />
     <state width="1868" height="408" key="GridCell.Tab.0.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593133077391" />
     <state width="1868" height="291" key="GridCell.Tab.0.right/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635928" />
@@ -825,23 +833,24 @@
     <state width="1868" height="360" key="GridCell.Tab.2.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1587299249510" />
     <state width="1868" height="372" key="GridCell.Tab.2.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593133077328" />
     <state width="1868" height="372" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377887" />
-    <state x="459" y="-1041" width="1125" height="897" key="SettingsEditor" timestamp="1592736926138">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state x="459" y="-1019" width="1125" height="897" key="SettingsEditor" timestamp="1593258150585">
+      <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="459" y="-1019" width="1125" height="897" key="SettingsEditor/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1591487384752" />
+    <state x="459" y="-1019" width="1125" height="897" key="SettingsEditor/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593258150585" />
     <state x="459" y="-1041" width="1125" height="897" key="SettingsEditor/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1592736926138" />
     <state x="296" y="38" key="SettingsEditor/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1589161873493" />
     <state x="338" y="-989" key="SettingsEditor/0.-1080.1920.1080/-1440.-1057.1440.2537/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585742971922" />
     <state x="338" y="-1041" key="SettingsEditor/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743629008" />
-    <state width="625" height="691" key="SwitcherDM" timestamp="1593085078990">
-      <screen x="0" y="-1080" width="1920" height="1080" />
-    </state>
-    <state width="625" height="691" key="SwitcherDM/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593085078990" />
-    <state width="625" height="500" key="SwitcherDM/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743613572" />
-    <state x="460" y="-845" key="Vcs.Push.Dialog.v2" timestamp="1591512386906">
+    <state width="625" height="677" key="SwitcherDM" timestamp="1593258697951">
       <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="460" y="-845" key="Vcs.Push.Dialog.v2/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1591512386906" />
+    <state width="625" height="677" key="SwitcherDM/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593258697951" />
+    <state width="625" height="691" key="SwitcherDM/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593085078990" />
+    <state width="625" height="500" key="SwitcherDM/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743613572" />
+    <state x="460" y="-845" key="Vcs.Push.Dialog.v2" timestamp="1593258022334">
+      <screen x="0" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="460" y="-845" key="Vcs.Push.Dialog.v2/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593258022334" />
     <state x="460" y="-863" key="Vcs.Push.Dialog.v2/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1587264401674" />
     <state x="556" y="-746" key="com.intellij.ide.util.TipDialog" timestamp="1586693089657">
       <screen x="0" y="-1080" width="1920" height="1080" />
@@ -873,9 +882,10 @@
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="665" y="-971" key="refactoring.ChangeSignatureDialog/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586677065183" />
-    <state x="541" y="-1032" width="838" height="1032" key="search.everywhere.popup" timestamp="1593084608235">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state x="541" y="-1010" width="838" height="1011" key="search.everywhere.popup" timestamp="1593258638000">
+      <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
+    <state x="541" y="-1010" width="838" height="1011" key="search.everywhere.popup/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593258638000" />
     <state x="541" y="-1032" width="838" height="1032" key="search.everywhere.popup/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593084608235" />
   </component>
   <component name="XDebuggerManager">

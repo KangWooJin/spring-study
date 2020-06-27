@@ -1,10 +1,11 @@
 package kangwoojin.github.io.querydsl.event.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.validation.constraints.NotNull;
+import javax.persistence.OneToMany;
 
 import lombok.Data;
 
@@ -17,7 +18,8 @@ public class Campaign {
 
     private String name;
 
-    @NotNull
-    @OneToOne
-    private Event event;
+    private Long amount;
+
+    @OneToMany
+    private List<Event> events;
 }
