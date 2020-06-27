@@ -45,7 +45,6 @@ class CampaignQueryDslTest {
         campaign.setEvents(List.of(event));
         return testEntityManager.persist(campaign);
     }
-
     @Test
     void selectByIdTest() {
         String name = RandomStringUtils.randomAlphabetic(5);
@@ -88,7 +87,6 @@ class CampaignQueryDslTest {
         assertThat(actual).isNotNull();
         assertThat(actual.getName()).isEqualTo("changedName");
         assertThat(actual.getAmount()).isEqualTo(amount);
-
     }
 
     @Test
