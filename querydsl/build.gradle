@@ -40,7 +40,7 @@ repositories {
 
 dependencies {
     implementation("com.querydsl:querydsl-jpa") // querydsl
-    implementation("com.querydsl:querydsl-apt") // querydsl
+//    implementation("com.querydsl:querydsl-apt") // querydsl
 
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -53,6 +53,9 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+
+    implementation 'org.apache.commons:commons-lang3'
+
 }
 
 test {
