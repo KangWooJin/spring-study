@@ -16,7 +16,7 @@ public class CampaignService {
     private final CampaignRepository campaignRepository;
 
     @Transactional
-    public Campaign save(Campaign campaign) {
+    public Campaign save_create(Campaign campaign) {
         if (campaign.getEvent() != null) {
 //            throw new RuntimeException("runtimeException");
         }
@@ -29,6 +29,6 @@ public class CampaignService {
         campaign.setEvent(event);
         campaign.setName("campaign");
 
-        return save(campaign);
+        return save_create(campaign);
     }
 }

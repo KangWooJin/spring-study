@@ -1,5 +1,7 @@
 package kangwoojin.github.io.querydsl.event.controller;
 
+import java.util.List;
+
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -22,6 +24,17 @@ public class CampaignController {
     public Campaign create(@RequestParam String name) {
         Event event = new Event();
         event.setName(name);
+        return campaignService.process(eventService.save(event));
+    }
+
+    @PostMapping("/create2")
+    @Transactional
+    public Campaign create2(@RequestParam List<String> name) {
+        name.forEach(names -> {
+            names.toString();
+        });
+        Event event = new Event();
+//        event.setName(name);
         return campaignService.process(eventService.save(event));
     }
 }
