@@ -132,4 +132,38 @@ class CampaignQueryDslTest {
 
         assertThat(actual).isNotNull();
     }
+
+    @Test
+    void groupingTest() {
+        String name = RandomStringUtils.randomAlphabetic(5);
+        long amount = RandomUtils.nextInt();
+        generateCampaign(name, amount);
+        generateCampaign(name, amount);
+
+        JPAQuery<Campaign> query = new JPAQuery(entityManager);
+        Long sum = query.select(qCampaign.amount.sum())
+                        .from(qCampaign)
+                        .groupBy(qCampaign.name)
+                        .fetchOne();
+
+        assertThat(sum).isEqualTo(amount * 2);
+    }
+
+    @Test
+    void orderingTest() {
+        String name = RandomStringUtils.randomAlphabetic(5);
+        long amount = RandomUtils.nextInt();
+        Campaign c1 = generateCampaign(name, amount);
+        Campaign c2 = generateCampaign(name, amount);
+
+        JPAQuery<Campaign> query = new JPAQuery(entityManager);
+        List<Campaign> actual = query.select(qCampaign)
+                                     .from(qCampaign)
+                                     .orderBy(qCampaign.id.desc())
+                                     .fetch();
+
+        assertThat(actual).hasSize(2);
+        assertThat(actual.get(0).getId()).isEqualTo(c2.getId());
+        assertThat(actual.get(1).getId()).isEqualTo(c1.getId());
+    }
 }
