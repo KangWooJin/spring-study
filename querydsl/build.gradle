@@ -40,7 +40,7 @@ repositories {
 
 dependencies {
     implementation("com.querydsl:querydsl-jpa") // querydsl
-//    implementation("com.querydsl:querydsl-apt") // querydsl
+    implementation("com.querydsl:querydsl-apt") // querydsl
 
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -62,7 +62,7 @@ test {
     useJUnitPlatform()
 }
 
-def querydslSrcDir = 'src/main/generated'
+def querydslSrcDir = 'src/querydsl/generated'
 
 querydsl {
     library = "com.querydsl:querydsl-apt"
