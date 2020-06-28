@@ -18,8 +18,10 @@ import com.querydsl.core.types.dsl.StringPath;
 @Generated("com.querydsl.codegen.EntitySerializer")
 public class QCampaign extends EntityPathBase<Campaign> {
 
-    public static final QCampaign campaign = new QCampaign("campaign");
     private static final long serialVersionUID = 2145470686L;
+
+    public static final QCampaign campaign = new QCampaign("campaign");
+
     public final NumberPath<Long> amount = createNumber("amount", Long.class);
 
     public final ListPath<Event, QEvent> events = this.<Event, QEvent>createList("events", Event.class, QEvent.class, PathInits.DIRECT2);

@@ -19,14 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="Add orderingTest">
-      <change afterPath="$PROJECT_DIR$/querydsl/src/querydsl/generated/kangwoojin/github/io/querydsl/event/model/QCampaign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/querydsl/src/querydsl/generated/kangwoojin/github/io/querydsl/event/model/QEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/querydsl/src/querydsl/generated/kangwoojin/github/io/querydsl/user/QUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/querydsl/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/querydsl/src/test/java/kangwoojin/github/io/querydsl/CampaignQueryDslTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/src/test/java/kangwoojin/github/io/querydsl/CampaignQueryDslTest.java" afterDir="false" />
+    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="Add temp">
+      <change afterPath="$PROJECT_DIR$/querydsl/src/test/java/kangwoojin/github/io/querydsl/FlushModeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/querydsl/src/main/java/kangwoojin/github/io/querydsl/event/model/Campaign.java" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/src/main/java/kangwoojin/github/io/querydsl/event/model/Campaign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/querydsl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/querydsl/src/querydsl/generated/kangwoojin/github/io/querydsl/event/model/QCampaign.java" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/src/querydsl/generated/kangwoojin/github/io/querydsl/event/model/QCampaign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/querydsl/src/querydsl/generated/kangwoojin/github/io/querydsl/event/model/QEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/src/querydsl/generated/kangwoojin/github/io/querydsl/event/model/QEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/querydsl/src/querydsl/generated/kangwoojin/github/io/querydsl/user/QUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/src/querydsl/generated/kangwoojin/github/io/querydsl/user/QUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,11 +125,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="JUnit" name="CampaignQueryDslTest.subQueryTest" />
-    </enabled-run-configurations>
-  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -209,45 +203,7 @@
       <recent name="$PROJECT_DIR$/elasticsearch" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CampaignQueryDslTest">
-    <configuration name="querydsl [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/querydsl" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="querydsl [compileQuerydsl]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/querydsl" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="compileQuerydsl" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.FlushModeTest.flushModeWhenFlushModeIsCommitTest">
     <configuration name="CampaignQueryDslTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="querydsl.test" />
       <extension name="coverage">
@@ -259,6 +215,22 @@
       <option name="PACKAGE_NAME" value="kangwoojin.github.io.querydsl" />
       <option name="MAIN_CLASS_NAME" value="kangwoojin.github.io.querydsl.CampaignQueryDslTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CampaignQueryDslTest.flushModeWhenFlushModeIsAutoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="querydsl.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kangwoojin.github.io.querydsl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kangwoojin.github.io.querydsl" />
+      <option name="MAIN_CLASS_NAME" value="kangwoojin.github.io.querydsl.CampaignQueryDslTest" />
+      <option name="METHOD_NAME" value="flushModeWhenFlushModeIsAutoTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -290,6 +262,22 @@
       <option name="PACKAGE_NAME" value="kangwoojin.github.io.querydsl" />
       <option name="MAIN_CLASS_NAME" value="kangwoojin.github.io.querydsl.CampaignQueryDslTest" />
       <option name="METHOD_NAME" value="orderingTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlushModeTest.flushModeWhenFlushModeIsCommitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="querydsl.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kangwoojin.github.io.querydsl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kangwoojin.github.io.querydsl" />
+      <option name="MAIN_CLASS_NAME" value="kangwoojin.github.io.querydsl.FlushModeTest" />
+      <option name="METHOD_NAME" value="flushModeWhenFlushModeIsCommitTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -399,8 +387,6 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.querydsl [clean]" />
-      <item itemvalue="Gradle.querydsl [compileQuerydsl]" />
       <item itemvalue="JUnit.CampaignQueryDslTest" />
       <item itemvalue="JUnit.CampaignQueryDslTest.groupingTest" />
       <item itemvalue="JUnit.CampaignQueryDslTest.orderingTest" />
@@ -414,14 +400,16 @@
       <item itemvalue="Spring Boot.QuerydslApplication" />
       <item itemvalue="Spring Boot.RestTemplateApplication" />
       <item itemvalue="Spring Boot.VuejsApplication" />
+      <item itemvalue="JUnit.CampaignQueryDslTest.flushModeWhenFlushModeIsAutoTest" />
+      <item itemvalue="JUnit.FlushModeTest.flushModeWhenFlushModeIsCommitTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FlushModeTest.flushModeWhenFlushModeIsCommitTest" />
+        <item itemvalue="JUnit.CampaignQueryDslTest.flushModeWhenFlushModeIsAutoTest" />
         <item itemvalue="JUnit.CampaignQueryDslTest" />
         <item itemvalue="JUnit.CampaignQueryDslTest.orderingTest" />
         <item itemvalue="JUnit.CampaignQueryDslTest.groupingTest" />
-        <item itemvalue="Gradle.querydsl [compileQuerydsl]" />
-        <item itemvalue="Gradle.querydsl [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -468,7 +456,7 @@
       <workItem from="1592832607654" duration="111000" />
       <workItem from="1593084109907" duration="1530000" />
       <workItem from="1593257996989" duration="6728000" />
-      <workItem from="1593265413861" duration="298000" />
+      <workItem from="1593265413861" duration="4400000" />
     </task>
     <task id="LOCAL-00001" summary="init elastic search study">
       <created>1583676715935</created>
@@ -715,7 +703,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593263189946</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Add temp">
+      <created>1593265770610</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1593265770610</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -739,7 +734,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/elasticsearch" />
     </ignored-roots>
-    <MESSAGE value="add spring boot aspect init" />
     <MESSAGE value="Add aspect example" />
     <MESSAGE value="Add query dsl project init" />
     <MESSAGE value="Add query dsl gradle" />
@@ -764,7 +758,8 @@
     <MESSAGE value="Add deleteQuery test" />
     <MESSAGE value="Add subquery test" />
     <MESSAGE value="Add orderingTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add orderingTest" />
+    <MESSAGE value="Add temp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add temp" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -805,65 +800,65 @@
     <state x="424" y="-1006" key="CommitChangelistDialog2/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1586691037568" />
     <state x="424" y="-1006" key="CommitChangelistDialog2/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1587277100330" />
     <state x="424" y="-1006" key="CommitChangelistDialog2/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743390078" />
-    <state width="1868" height="353" key="GridCell.Tab.0.bottom" timestamp="1593265401938">
-      <screen x="0" y="-1057" width="1920" height="1057" />
+    <state width="1868" height="428" key="GridCell.Tab.0.bottom" timestamp="1593338478230">
+      <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401938" />
     <state width="1868" height="360" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1587299249989" />
-    <state width="1868" height="408" key="GridCell.Tab.0.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593133077393" />
+    <state width="1868" height="428" key="GridCell.Tab.0.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593338478230" />
     <state width="1868" height="291" key="GridCell.Tab.0.bottom/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635931" />
     <state width="1868" height="372" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377882" />
-    <state width="1868" height="353" key="GridCell.Tab.0.center" timestamp="1593265401937">
-      <screen x="0" y="-1057" width="1920" height="1057" />
+    <state width="1868" height="428" key="GridCell.Tab.0.center" timestamp="1593338478226">
+      <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401937" />
     <state width="1868" height="360" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1587299249971" />
-    <state width="1868" height="408" key="GridCell.Tab.0.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593133077390" />
+    <state width="1868" height="428" key="GridCell.Tab.0.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593338478226" />
     <state width="1868" height="291" key="GridCell.Tab.0.center/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635923" />
     <state width="1868" height="372" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377880" />
-    <state width="1868" height="353" key="GridCell.Tab.0.left" timestamp="1593265401936">
-      <screen x="0" y="-1057" width="1920" height="1057" />
+    <state width="1868" height="428" key="GridCell.Tab.0.left" timestamp="1593338478224">
+      <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401936" />
     <state width="1868" height="360" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1587299249966" />
-    <state width="1868" height="408" key="GridCell.Tab.0.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593133077388" />
+    <state width="1868" height="428" key="GridCell.Tab.0.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593338478224" />
     <state width="1868" height="291" key="GridCell.Tab.0.left/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635921" />
     <state width="1868" height="372" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377878" />
-    <state width="1868" height="353" key="GridCell.Tab.0.right" timestamp="1593265401937">
-      <screen x="0" y="-1057" width="1920" height="1057" />
+    <state width="1868" height="428" key="GridCell.Tab.0.right" timestamp="1593338478228">
+      <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401937" />
     <state width="1868" height="360" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1587299249974" />
-    <state width="1868" height="408" key="GridCell.Tab.0.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593133077391" />
+    <state width="1868" height="428" key="GridCell.Tab.0.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593338478228" />
     <state width="1868" height="291" key="GridCell.Tab.0.right/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743635928" />
     <state width="1868" height="372" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377881" />
-    <state width="1868" height="353" key="GridCell.Tab.1.bottom" timestamp="1593265401941">
-      <screen x="0" y="-1057" width="1920" height="1057" />
+    <state width="1868" height="428" key="GridCell.Tab.1.bottom" timestamp="1593338478239">
+      <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.1.bottom/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401941" />
     <state width="1868" height="360" key="GridCell.Tab.1.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1587299249506" />
-    <state width="1868" height="372" key="GridCell.Tab.1.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593133077371" />
+    <state width="1868" height="428" key="GridCell.Tab.1.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593338478239" />
     <state width="1868" height="372" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377885" />
-    <state width="1868" height="353" key="GridCell.Tab.1.center" timestamp="1593265401940">
-      <screen x="0" y="-1057" width="1920" height="1057" />
+    <state width="1868" height="428" key="GridCell.Tab.1.center" timestamp="1593338478235">
+      <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.1.center/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401940" />
     <state width="1868" height="360" key="GridCell.Tab.1.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1587299249502" />
-    <state width="1868" height="372" key="GridCell.Tab.1.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593133077367" />
+    <state width="1868" height="428" key="GridCell.Tab.1.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593338478235" />
     <state width="1868" height="372" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377883" />
-    <state width="1868" height="353" key="GridCell.Tab.1.left" timestamp="1593265401939">
-      <screen x="0" y="-1057" width="1920" height="1057" />
+    <state width="1868" height="428" key="GridCell.Tab.1.left" timestamp="1593338478232">
+      <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.1.left/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401939" />
     <state width="1868" height="360" key="GridCell.Tab.1.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1587299249500" />
-    <state width="1868" height="372" key="GridCell.Tab.1.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593133077364" />
+    <state width="1868" height="428" key="GridCell.Tab.1.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593338478232" />
     <state width="1868" height="372" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377883" />
-    <state width="1868" height="353" key="GridCell.Tab.1.right" timestamp="1593265401940">
-      <screen x="0" y="-1057" width="1920" height="1057" />
+    <state width="1868" height="428" key="GridCell.Tab.1.right" timestamp="1593338478237">
+      <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.1.right/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401940" />
     <state width="1868" height="360" key="GridCell.Tab.1.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1587299249504" />
-    <state width="1868" height="372" key="GridCell.Tab.1.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593133077369" />
+    <state width="1868" height="428" key="GridCell.Tab.1.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593338478237" />
     <state width="1868" height="372" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377884" />
     <state width="1868" height="372" key="GridCell.Tab.2.bottom" timestamp="1593133077330">
       <screen x="0" y="-1080" width="1920" height="1080" />
@@ -893,6 +888,10 @@
     <state width="1868" height="360" key="GridCell.Tab.2.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1587299249510" />
     <state width="1868" height="372" key="GridCell.Tab.2.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593133077328" />
     <state width="1868" height="372" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377887" />
+    <state x="611" y="-899" key="RollbackChangesDialog" timestamp="1593339768114">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="611" y="-899" key="RollbackChangesDialog/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593339768114" />
     <state x="459" y="-1019" width="1125" height="897" key="SettingsEditor" timestamp="1593259893052">
       <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
@@ -901,17 +900,17 @@
     <state x="296" y="38" key="SettingsEditor/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1589161873493" />
     <state x="338" y="-989" key="SettingsEditor/0.-1080.1920.1080/-1440.-1057.1440.2537/0.23.1680.1027@0.-1080.1920.1080" timestamp="1585742971922" />
     <state x="338" y="-1041" key="SettingsEditor/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743629008" />
-    <state width="625" height="677" key="SwitcherDM" timestamp="1593263752655">
-      <screen x="0" y="-1057" width="1920" height="1057" />
+    <state width="625" height="691" key="SwitcherDM" timestamp="1593339705552">
+      <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="625" height="677" key="SwitcherDM/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593263752655" />
-    <state width="625" height="691" key="SwitcherDM/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593085078990" />
+    <state width="625" height="691" key="SwitcherDM/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593339705552" />
     <state width="625" height="500" key="SwitcherDM/0.-1080.1920.1080/-1440.-1080.1440.2560/0.0.1680.1050@0.-1080.1920.1080" timestamp="1585743613572" />
-    <state x="460" y="-845" key="Vcs.Push.Dialog.v2" timestamp="1593264179490">
-      <screen x="0" y="-1057" width="1920" height="1057" />
+    <state x="460" y="-863" key="Vcs.Push.Dialog.v2" timestamp="1593265773734">
+      <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="460" y="-845" key="Vcs.Push.Dialog.v2/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593264179490" />
-    <state x="460" y="-863" key="Vcs.Push.Dialog.v2/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1587264401674" />
+    <state x="460" y="-863" key="Vcs.Push.Dialog.v2/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593265773734" />
     <state x="556" y="-746" key="com.intellij.ide.util.TipDialog" timestamp="1586693089657">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
@@ -942,11 +941,11 @@
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="665" y="-971" key="refactoring.ChangeSignatureDialog/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1586677065183" />
-    <state x="541" y="-1010" width="838" height="1011" key="search.everywhere.popup" timestamp="1593264086364">
-      <screen x="0" y="-1057" width="1920" height="1057" />
+    <state x="541" y="-1032" width="838" height="1032" key="search.everywhere.popup" timestamp="1593339067198">
+      <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="541" y="-1010" width="838" height="1011" key="search.everywhere.popup/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593264086364" />
-    <state x="541" y="-1032" width="838" height="1032" key="search.everywhere.popup/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593084608235" />
+    <state x="541" y="-1032" width="838" height="1032" key="search.everywhere.popup/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593339067198" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -970,6 +969,46 @@
           <url>file://$PROJECT_DIR$/querydsl/src/test/java/kangwoojin/github/io/querydsl/CampaignQueryDslTest.java</url>
           <line>130</line>
           <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.12.Final/bf463ce2f9974ad7a5eede0f2ebb829b4a56a46d/hibernate-core-5.4.12.Final-sources.jar!/org/hibernate/query/criteria/internal/compile/CriteriaQueryTypeQueryAdapter.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.12.Final/bf463ce2f9974ad7a5eede0f2ebb829b4a56a46d/hibernate-core-5.4.12.Final-sources.jar!/org/hibernate/query/criteria/internal/compile/CriteriaQueryTypeQueryAdapter.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.12.Final/bf463ce2f9974ad7a5eede0f2ebb829b4a56a46d/hibernate-core-5.4.12.Final-sources.jar!/org/hibernate/query/internal/CollectionFilterImpl.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.12.Final/bf463ce2f9974ad7a5eede0f2ebb829b4a56a46d/hibernate-core-5.4.12.Final-sources.jar!/org/hibernate/query/internal/AbstractProducedQuery.java</url>
+          <line>1560</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.12.Final/bf463ce2f9974ad7a5eede0f2ebb829b4a56a46d/hibernate-core-5.4.12.Final-sources.jar!/org/hibernate/internal/SessionImpl.java</url>
+          <line>1387</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.12.Final/bf463ce2f9974ad7a5eede0f2ebb829b4a56a46d/hibernate-core-5.4.12.Final-sources.jar!/org/hibernate/internal/SessionImpl.java</url>
+          <line>1310</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.12.Final/bf463ce2f9974ad7a5eede0f2ebb829b4a56a46d/hibernate-core-5.4.12.Final-sources.jar!/org/hibernate/engine/internal/SessionEventListenerManagerImpl.java</url>
+          <line>238</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.12.Final/bf463ce2f9974ad7a5eede0f2ebb829b4a56a46d/hibernate-core-5.4.12.Final-sources.jar!/org/hibernate/event/internal/DefaultAutoFlushEventListener.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="78" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

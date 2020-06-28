@@ -17,9 +17,12 @@ import com.querydsl.core.types.dsl.StringPath;
 @Generated("com.querydsl.codegen.EntitySerializer")
 public class QEvent extends EntityPathBase<Event> {
 
-    public static final QEvent event = new QEvent("event");
     private static final long serialVersionUID = -1651380852L;
+
     private static final PathInits INITS = PathInits.DIRECT2;
+
+    public static final QEvent event = new QEvent("event");
+
     public final NumberPath<Long> amount = createNumber("amount", Long.class);
 
     public final QCampaign campaign;

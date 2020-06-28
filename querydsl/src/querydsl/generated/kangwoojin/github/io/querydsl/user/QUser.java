@@ -16,8 +16,10 @@ import com.querydsl.core.types.dsl.StringPath;
 @Generated("com.querydsl.codegen.EntitySerializer")
 public class QUser extends EntityPathBase<User> {
 
-    public static final QUser user = new QUser("user");
     private static final long serialVersionUID = -1253367143L;
+
+    public static final QUser user = new QUser("user");
+
     public final StringPath country = createString("country");
 
     public final NumberPath<Long> id = createNumber("id", Long.class);
