@@ -9,10 +9,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-import lombok.Data;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
-@Data
+@Getter
+@Setter
 public class Campaign {
     @Id
     @GeneratedValue
@@ -23,5 +27,6 @@ public class Campaign {
     private Long amount;
 
     @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "campaign")
+    @JsonBackReference
     private List<Event> events = new ArrayList<>();
 }

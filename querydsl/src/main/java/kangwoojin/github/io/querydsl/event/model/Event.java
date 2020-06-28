@@ -6,10 +6,14 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-import lombok.Data;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
-@Data
+@Getter
+@Setter
 public class Event {
     @Id
     @GeneratedValue
@@ -20,5 +24,6 @@ public class Event {
 
     @ManyToOne
     @JoinColumn(name = "campaign_id")
+    @JsonManagedReference
     private Campaign campaign;
 }
