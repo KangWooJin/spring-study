@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="Commit hook test">
+    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="Change querydsl setting">
+      <change afterPath="$PROJECT_DIR$/querydsl/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle-demo/src/main/java/kangwoojin/github/io/gradledemo/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradle-demo/src/main/java/kangwoojin/github/io/gradledemo/TestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/querydsl/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/querydsl/src/test/java/kangwoojin/github/io/querydsl/CampaignControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/querydsl/src/test/java/kangwoojin/github/io/querydsl/CampaignControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,26 +197,7 @@
       <recent name="$PROJECT_DIR$/elasticsearch" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.querydsl [test]">
-    <configuration name="gradle-demo [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/gradle-demo" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.querydsl [build]">
     <configuration name="querydsl [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -228,6 +210,25 @@
         <option name="taskNames">
           <list>
             <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="querydsl [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/querydsl" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -400,7 +401,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.gradle-demo [test]" />
+      <item itemvalue="Gradle.querydsl [test]" />
+      <item itemvalue="Gradle.querydsl [clean]" />
+      <item itemvalue="Gradle.querydsl [assemble]" />
+      <item itemvalue="Gradle.querydsl [build]" />
       <item itemvalue="JUnit.EventListenerTest.prePersistTest" />
       <item itemvalue="Kotlin script.build.gradle.kts" />
       <item itemvalue="npm.serve" />
@@ -413,17 +417,14 @@
       <item itemvalue="Spring Boot.RestTemplateApplication" />
       <item itemvalue="Spring Boot.VuejsApplication" />
       <item itemvalue="Spring Boot.GradleDemoApplication" />
-      <item itemvalue="Gradle.querydsl [test]" />
-      <item itemvalue="Gradle.querydsl [clean]" />
-      <item itemvalue="Gradle.querydsl [assemble]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.querydsl [build]" />
         <item itemvalue="Gradle.querydsl [assemble]" />
         <item itemvalue="Gradle.querydsl [clean]" />
         <item itemvalue="Gradle.querydsl [test]" />
         <item itemvalue="JUnit.EventListenerTest.prePersistTest" />
-        <item itemvalue="Gradle.gradle-demo [test]" />
       </list>
     </recent_temporary>
   </component>
@@ -483,7 +484,8 @@
       <workItem from="1595411030604" duration="607000" />
       <workItem from="1595426206895" duration="537000" />
       <workItem from="1595476565331" duration="518000" />
-      <workItem from="1595746286853" duration="908000" />
+      <workItem from="1595746286853" duration="4489000" />
+      <workItem from="1595761791245" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="init elastic search study">
       <created>1583676715935</created>
@@ -793,7 +795,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595059991963</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Change querydsl setting">
+      <created>1595750125728</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1595750125728</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -818,7 +827,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/elasticsearch" />
     </ignored-roots>
-    <MESSAGE value="open-feign init" />
     <MESSAGE value="Add retryer and exception handling" />
     <MESSAGE value="Add error response" />
     <MESSAGE value="Change query dsl setting" />
@@ -843,7 +851,8 @@
     <MESSAGE value="Add gradle demo" />
     <MESSAGE value="Check commit hook" />
     <MESSAGE value="Commit hook test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit hook test" />
+    <MESSAGE value="Change querydsl setting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change querydsl setting" />
   </component>
   <component name="WindowStateProjectService">
     <state x="420" y="-893" width="1175" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594709683079">
@@ -875,33 +884,33 @@
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="424" y="-1006" key="CommitChangelistDialog2/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1587277100330" />
-    <state width="1878" height="379" key="GridCell.Tab.0.bottom" timestamp="1595749833389">
+    <state width="1878" height="379" key="GridCell.Tab.0.bottom" timestamp="1595758525835">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401938" />
     <state width="1868" height="365" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1594541088348" />
-    <state width="1878" height="379" key="GridCell.Tab.0.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1595749833389" />
+    <state width="1878" height="379" key="GridCell.Tab.0.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1595758525835" />
     <state width="1868" height="372" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377882" />
-    <state width="1878" height="379" key="GridCell.Tab.0.center" timestamp="1595749833382">
+    <state width="1878" height="379" key="GridCell.Tab.0.center" timestamp="1595758525833">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401937" />
     <state width="1868" height="365" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1594541088343" />
-    <state width="1878" height="379" key="GridCell.Tab.0.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1595749833382" />
+    <state width="1878" height="379" key="GridCell.Tab.0.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1595758525833" />
     <state width="1868" height="372" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377880" />
-    <state width="1878" height="379" key="GridCell.Tab.0.left" timestamp="1595749833377">
+    <state width="1878" height="379" key="GridCell.Tab.0.left" timestamp="1595758525832">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401936" />
     <state width="1868" height="365" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1594541088340" />
-    <state width="1878" height="379" key="GridCell.Tab.0.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1595749833377" />
+    <state width="1878" height="379" key="GridCell.Tab.0.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1595758525832" />
     <state width="1868" height="372" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377878" />
-    <state width="1878" height="379" key="GridCell.Tab.0.right" timestamp="1595749833385">
+    <state width="1878" height="379" key="GridCell.Tab.0.right" timestamp="1595758525834">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401937" />
     <state width="1868" height="365" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1594541088346" />
-    <state width="1878" height="379" key="GridCell.Tab.0.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1595749833385" />
+    <state width="1878" height="379" key="GridCell.Tab.0.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1595758525834" />
     <state width="1868" height="372" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377881" />
     <state width="1868" height="412" key="GridCell.Tab.1.bottom" timestamp="1594710724661">
       <screen x="0" y="-1080" width="1920" height="1080" />
@@ -967,10 +976,10 @@
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="509" y="-827" key="MultipleFileMergeDialog/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1595074640137" />
-    <state x="611" y="-899" key="RollbackChangesDialog" timestamp="1593339768114">
+    <state x="611" y="-899" key="RollbackChangesDialog" timestamp="1595751295429">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="611" y="-899" key="RollbackChangesDialog/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1593339768114" />
+    <state x="611" y="-899" key="RollbackChangesDialog/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1595751295429" />
     <state x="459" y="-1041" width="1125" height="897" key="SettingsEditor" timestamp="1595426260709">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
@@ -1009,11 +1018,11 @@
     </state>
     <state x="159" y="-815" key="new project wizard/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1591497611529" />
     <state x="159" y="-833" width="1440" height="687" key="new project wizard/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1594615991256" />
-    <state x="541" y="-1032" width="944" height="1032" key="search.everywhere.popup" timestamp="1595136236615">
+    <state x="541" y="-1032" width="944" height="1032" key="search.everywhere.popup" timestamp="1595753504213">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="541" y="-1010" width="838" height="1011" key="search.everywhere.popup/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593264086364" />
-    <state x="541" y="-1032" width="944" height="1032" key="search.everywhere.popup/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1595136236615" />
+    <state x="541" y="-1032" width="944" height="1032" key="search.everywhere.popup/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1595753504213" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

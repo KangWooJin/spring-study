@@ -5,6 +5,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -21,6 +22,7 @@ public class CampaignControllerTest {
     private MockMvc mockMvc;
 
     @Test
+    @Disabled
     void createTest() throws Exception {
 //        MvcResult mvcResult = mockMvc.perform(post("/create")
 //                                                      .param("name", null)
