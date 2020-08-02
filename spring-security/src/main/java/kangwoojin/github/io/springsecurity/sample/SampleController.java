@@ -1,4 +1,4 @@
-package kangwoojin.github.io.springsecurity;
+package kangwoojin.github.io.springsecurity.sample;
 
 import java.security.Principal;
 
@@ -6,8 +6,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import lombok.RequiredArgsConstructor;
+
 @Controller
-public class SimpleController {
+@RequiredArgsConstructor
+public class SampleController {
+    private final SampleService sampleService;
 
     @GetMapping("/")
     public String index(Model model, Principal principal) {
@@ -27,6 +31,7 @@ public class SimpleController {
 
     @GetMapping("/dashboard")
     public String dashboard(Model model, Principal principal) {
+        sampleService.dashboard();
         model.addAttribute("message", "Hello " + principal.getName());
         return "dashboard";
     }
