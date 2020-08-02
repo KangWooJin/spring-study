@@ -19,15 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="Add account service">
-      <change afterPath="$PROJECT_DIR$/spring-security/lombok.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security/src/test/java/kangwoojin/github/io/springsecurity/user/AccountControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security/src/test/java/kangwoojin/github/io/springsecurity/user/WithUser.java" afterDir="false" />
+    <list default="true" id="25b83ca4-bd3b-42a4-8231-88efb2882bb7" name="Default Changelist" comment="Add security test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security/src/main/java/kangwoojin/github/io/springsecurity/SimpleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security/src/main/java/kangwoojin/github/io/springsecurity/SimpleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security/src/main/java/kangwoojin/github/io/springsecurity/user/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security/src/main/java/kangwoojin/github/io/springsecurity/user/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security/src/test/java/kangwoojin/github/io/springsecurity/SpringSecurityApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/src/test/java/kangwoojin/github/io/springsecurity/user/AccountControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security/src/test/java/kangwoojin/github/io/springsecurity/user/AccountControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/src/test/java/kangwoojin/github/io/springsecurity/user/WithUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security/src/test/java/kangwoojin/github/io/springsecurity/user/WithUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +187,7 @@
       <recent name="$PROJECT_DIR$/elasticsearch" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AccountControllerTest">
+  <component name="RunManager" selected="JUnit.AccountControllerTest.loginSuccessByAnnotation">
     <configuration name="AccountControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-security_test" />
       <useClassPathOnly />
@@ -217,22 +212,6 @@
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountControllerTest.indexUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-security.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kangwoojin.github.io.springsecurity.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="kangwoojin.github.io.springsecurity.user" />
-      <option name="MAIN_CLASS_NAME" value="kangwoojin.github.io.springsecurity.user.AccountControllerTest" />
-      <option name="METHOD_NAME" value="indexUser" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -276,6 +255,38 @@
       <option name="PACKAGE_NAME" value="kangwoojin.github.io.springsecurity.user" />
       <option name="MAIN_CLASS_NAME" value="kangwoojin.github.io.springsecurity.user.AccountControllerTest" />
       <option name="METHOD_NAME" value="loginFail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountControllerTest.loginSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-security_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kangwoojin.github.io.springsecurity.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kangwoojin.github.io.springsecurity.user" />
+      <option name="MAIN_CLASS_NAME" value="kangwoojin.github.io.springsecurity.user.AccountControllerTest" />
+      <option name="METHOD_NAME" value="loginSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountControllerTest.loginSuccessByAnnotation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-security_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kangwoojin.github.io.springsecurity.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kangwoojin.github.io.springsecurity.user" />
+      <option name="MAIN_CLASS_NAME" value="kangwoojin.github.io.springsecurity.user.AccountControllerTest" />
+      <option name="METHOD_NAME" value="loginSuccessByAnnotation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -364,19 +375,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringSecurityApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="spring-security_main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kangwoojin.github.io.springsecurity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="kangwoojin.github.io.springsecurity.SpringSecurityApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SpringSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-security.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="kangwoojin.github.io.springsecurity.SpringSecurityApplication" />
@@ -412,7 +410,6 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.AccountControllerTest.indexUser" />
       <item itemvalue="JUnit.AccountControllerTest" />
       <item itemvalue="JUnit.AccountControllerTest.login" />
       <item itemvalue="Kotlin script.build.gradle.kts" />
@@ -427,16 +424,17 @@
       <item itemvalue="Spring Boot.VuejsApplication" />
       <item itemvalue="Spring Boot.GradleDemoApplication" />
       <item itemvalue="Spring Boot.SpringSecurityApplication" />
-      <item itemvalue="Spring Boot.SpringSecurityApplication (1)" />
       <item itemvalue="JUnit.AccountControllerTest.loginFail" />
+      <item itemvalue="JUnit.AccountControllerTest.loginSuccessByAnnotation" />
+      <item itemvalue="JUnit.AccountControllerTest.loginSuccess" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccountControllerTest.loginSuccessByAnnotation" />
+        <item itemvalue="JUnit.AccountControllerTest.loginSuccess" />
         <item itemvalue="JUnit.AccountControllerTest" />
         <item itemvalue="JUnit.AccountControllerTest.loginFail" />
         <item itemvalue="JUnit.AccountControllerTest.login" />
-        <item itemvalue="Spring Boot.SpringSecurityApplication (1)" />
-        <item itemvalue="JUnit.AccountControllerTest.indexUser" />
       </list>
     </recent_temporary>
   </component>
@@ -513,14 +511,7 @@
       <workItem from="1596347656304" duration="86000" />
       <workItem from="1596348342518" duration="160000" />
       <workItem from="1596348537538" duration="165000" />
-      <workItem from="1596348713924" duration="1228000" />
-    </task>
-    <task id="LOCAL-00003" summary="Add user save test">
-      <created>1583714214997</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1583714214997</updated>
+      <workItem from="1596348713924" duration="4185000" />
     </task>
     <task id="LOCAL-00004" summary="Add docker-compose.yml &#10;&#10;- elastic search&#10;- kibana">
       <created>1583847676839</created>
@@ -858,7 +849,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596345282063</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Add security test">
+      <created>1596350684222</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1596350684223</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -883,7 +881,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/elasticsearch" />
     </ignored-roots>
-    <MESSAGE value="Change open feign" />
     <MESSAGE value="Add vuejs init" />
     <MESSAGE value="Fix lint" />
     <MESSAGE value="Add transaction test code" />
@@ -908,7 +905,8 @@
     <MESSAGE value="Add Spring Security example" />
     <MESSAGE value="Add users info" />
     <MESSAGE value="Add account service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add account service" />
+    <MESSAGE value="Add security test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add security test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="-917" key="#AccountControllerTest" timestamp="1596348997609">
@@ -948,61 +946,61 @@
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="635" y="-843" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1592744550846" />
-    <state width="1876" height="375" key="GridCell.Tab.0.bottom" timestamp="1596349451642">
+    <state width="1876" height="423" key="GridCell.Tab.0.bottom" timestamp="1596353345890">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401938" />
     <state width="1876" height="375" key="GridCell.Tab.0.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1596349000014" />
-    <state width="1876" height="375" key="GridCell.Tab.0.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596349451642" />
+    <state width="1876" height="423" key="GridCell.Tab.0.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596353345890" />
     <state width="1868" height="372" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377882" />
-    <state width="1876" height="375" key="GridCell.Tab.0.center" timestamp="1596349451640">
+    <state width="1876" height="423" key="GridCell.Tab.0.center" timestamp="1596353345888">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401937" />
     <state width="1876" height="375" key="GridCell.Tab.0.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1596349000012" />
-    <state width="1876" height="375" key="GridCell.Tab.0.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596349451640" />
+    <state width="1876" height="423" key="GridCell.Tab.0.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596353345888" />
     <state width="1868" height="372" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377880" />
-    <state width="1876" height="375" key="GridCell.Tab.0.left" timestamp="1596349451639">
+    <state width="1876" height="423" key="GridCell.Tab.0.left" timestamp="1596353345887">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401936" />
     <state width="1876" height="375" key="GridCell.Tab.0.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1596349000010" />
-    <state width="1876" height="375" key="GridCell.Tab.0.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596349451639" />
+    <state width="1876" height="423" key="GridCell.Tab.0.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596353345887" />
     <state width="1868" height="372" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377878" />
-    <state width="1876" height="375" key="GridCell.Tab.0.right" timestamp="1596349451641">
+    <state width="1876" height="423" key="GridCell.Tab.0.right" timestamp="1596353345889">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401937" />
     <state width="1876" height="375" key="GridCell.Tab.0.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1596349000013" />
-    <state width="1876" height="375" key="GridCell.Tab.0.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596349451641" />
+    <state width="1876" height="423" key="GridCell.Tab.0.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596353345889" />
     <state width="1868" height="372" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377881" />
-    <state width="1876" height="375" key="GridCell.Tab.1.bottom" timestamp="1596349000017">
+    <state width="1876" height="423" key="GridCell.Tab.1.bottom" timestamp="1596353355501">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.1.bottom/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401941" />
     <state width="1876" height="375" key="GridCell.Tab.1.bottom/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1596349000017" />
-    <state width="1878" height="427" key="GridCell.Tab.1.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596345653844" />
+    <state width="1876" height="423" key="GridCell.Tab.1.bottom/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596353355501" />
     <state width="1868" height="372" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377885" />
-    <state width="1876" height="375" key="GridCell.Tab.1.center" timestamp="1596349000015">
+    <state width="1876" height="423" key="GridCell.Tab.1.center" timestamp="1596353355500">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.1.center/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401940" />
     <state width="1876" height="375" key="GridCell.Tab.1.center/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1596349000015" />
-    <state width="1878" height="427" key="GridCell.Tab.1.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596345653840" />
+    <state width="1876" height="423" key="GridCell.Tab.1.center/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596353355500" />
     <state width="1868" height="372" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377883" />
-    <state width="1876" height="375" key="GridCell.Tab.1.left" timestamp="1596349000015">
+    <state width="1876" height="423" key="GridCell.Tab.1.left" timestamp="1596353355499">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.1.left/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401939" />
     <state width="1876" height="375" key="GridCell.Tab.1.left/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1596349000015" />
-    <state width="1878" height="427" key="GridCell.Tab.1.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596345653838" />
+    <state width="1876" height="423" key="GridCell.Tab.1.left/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596353355499" />
     <state width="1868" height="372" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377883" />
-    <state width="1876" height="375" key="GridCell.Tab.1.right" timestamp="1596349000016">
+    <state width="1876" height="423" key="GridCell.Tab.1.right" timestamp="1596353355501">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1868" height="353" key="GridCell.Tab.1.right/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593265401940" />
     <state width="1876" height="375" key="GridCell.Tab.1.right/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1596349000016" />
-    <state width="1878" height="427" key="GridCell.Tab.1.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596345653842" />
+    <state width="1876" height="423" key="GridCell.Tab.1.right/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596353355501" />
     <state width="1868" height="372" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591580377884" />
     <state width="1878" height="427" key="GridCell.Tab.2.bottom" timestamp="1596345653850">
       <screen x="0" y="-1080" width="1920" height="1080" />
@@ -1047,17 +1045,17 @@
     <state x="459" y="-1041" key="SettingsEditor/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1596348909963" />
     <state x="459" y="-1041" width="1125" height="897" key="SettingsEditor/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596349102693" />
     <state x="296" y="38" key="SettingsEditor/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1589161873493" />
-    <state width="625" height="691" key="SwitcherDM" timestamp="1596349047405">
+    <state width="625" height="691" key="SwitcherDM" timestamp="1596353337475">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state width="625" height="677" key="SwitcherDM/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593263752655" />
     <state width="625" height="691" key="SwitcherDM/-1440.-1057.1440.2537/0.-1080.1920.1080/0.23.1680.1027@0.-1080.1920.1080" timestamp="1594540901906" />
-    <state width="625" height="691" key="SwitcherDM/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596349047405" />
-    <state x="460" y="-863" key="Vcs.Push.Dialog.v2" timestamp="1596345285153">
+    <state width="625" height="691" key="SwitcherDM/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596353337475" />
+    <state x="460" y="-863" key="Vcs.Push.Dialog.v2" timestamp="1596350689603">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="460" y="-845" key="Vcs.Push.Dialog.v2/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593264179490" />
-    <state x="460" y="-863" key="Vcs.Push.Dialog.v2/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596345285153" />
+    <state x="460" y="-863" key="Vcs.Push.Dialog.v2/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596350689603" />
     <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1594547567125">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
@@ -1083,11 +1081,11 @@
     </state>
     <state x="159" y="-815" key="new project wizard/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1591497611529" />
     <state x="159" y="-833" width="1440" height="687" key="new project wizard/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596114686702" />
-    <state x="541" y="-1032" width="944" height="1032" key="search.everywhere.popup" timestamp="1596295410415">
+    <state x="541" y="-1032" width="944" height="1032" key="search.everywhere.popup" timestamp="1596353179368">
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="541" y="-1010" width="838" height="1011" key="search.everywhere.popup/-1440.-1057.1440.2537/0.-1057.1920.1057/0.23.1680.1027@0.-1057.1920.1057" timestamp="1593264086364" />
-    <state x="541" y="-1032" width="944" height="1032" key="search.everywhere.popup/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596295410415" />
+    <state x="541" y="-1032" width="944" height="1032" key="search.everywhere.popup/-1440.-1080.1440.2560/0.-1080.1920.1080/0.0.1680.1050@0.-1080.1920.1080" timestamp="1596353179368" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1196,16 +1194,6 @@
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.3.3.RELEASE/728e13ebf53a8025457f27dd0bd48f4562927b5e/spring-security-core-5.3.3.RELEASE-sources.jar!/org/springframework/security/authentication/AnonymousAuthenticationProvider.java</url>
           <line>54</line>
           <option name="timeStamp" value="135" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.3.3.RELEASE/4c9b78b018658ea27378f307a673fb28be47e5bc/spring-security-config-5.3.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/authentication/configuration/InitializeUserDetailsBeanManagerConfigurer.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="137" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.3.3.RELEASE/4c9b78b018658ea27378f307a673fb28be47e5bc/spring-security-config-5.3.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/authentication/configuration/InitializeUserDetailsBeanManagerConfigurer.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="138" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.3.3.RELEASE/728e13ebf53a8025457f27dd0bd48f4562927b5e/spring-security-core-5.3.3.RELEASE-sources.jar!/org/springframework/security/crypto/password/DelegatingPasswordEncoder.java</url>

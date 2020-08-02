@@ -1,6 +1,7 @@
 package kangwoojin.github.io.springsecurity.user;
 
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestBuilders.formLogin;
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.anonymous;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.user;
 import static org.springframework.security.test.web.servlet.response.SecurityMockMvcResultMatchers.authenticated;
 import static org.springframework.security.test.web.servlet.response.SecurityMockMvcResultMatchers.unauthenticated;
@@ -31,14 +32,14 @@ class AccountControllerTest {
     @Test
     @WithAnonymousUser
     void indexAnonymous() throws Exception {
-        mockMvc.perform(get("/"))
+        mockMvc.perform(get("/").with(anonymous()))
                .andExpect(status().isOk());
     }
 
     @Test
     @WithUser
     void indexUser() throws Exception {
-        mockMvc.perform(get("/"))
+        mockMvc.perform(get("/").with(user("woojin").roles("USER")))
                .andExpect(status().isOk());
     }
 

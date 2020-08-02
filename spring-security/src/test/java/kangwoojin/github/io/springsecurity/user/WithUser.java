@@ -6,6 +6,6 @@ import java.lang.annotation.RetentionPolicy;
 import org.springframework.security.test.context.support.WithMockUser;
 
 @Retention(RetentionPolicy.RUNTIME)
-@WithMockUser(username = "admin", roles = "USER")
+@WithMockUser(username = "woojin", roles = "USER", password = "123")
 public @interface WithUser {
 }
