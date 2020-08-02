@@ -1,7 +1,9 @@
 spring:
-  security:
-    user:
-      name: user
-      password: 123
-      roles: ADMIN
-
+  # JPA (JpaBaseConfiguration, HibernateJpaAutoConfiguration)
+  jpa:
+    properties:
+      hibernate:
+        #        dialect: org.hibernate.dialect.H2Dialect
+        use_sql_comments: true
+        format_sql: true
+    show_sql: true
