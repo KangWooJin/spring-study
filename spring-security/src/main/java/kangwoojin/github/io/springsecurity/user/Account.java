@@ -7,10 +7,16 @@ import javax.persistence.Id;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Account {
     @Id
     @GeneratedValue

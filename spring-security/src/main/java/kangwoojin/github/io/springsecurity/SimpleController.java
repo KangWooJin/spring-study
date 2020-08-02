@@ -12,7 +12,7 @@ public class SimpleController {
     @GetMapping("/")
     public String index(Model model, Principal principal) {
         if (principal != null) {
-            model.addAttribute("message", "Hello Spring" + principal.getName());
+            model.addAttribute("message", "Hello Spring " + principal.getName());
         } else {
             model.addAttribute("message", "Hello Spring Security");
         }
@@ -27,13 +27,13 @@ public class SimpleController {
 
     @GetMapping("/dashboard")
     public String dashboard(Model model, Principal principal) {
-        model.addAttribute("message", "Hello" + principal.getName());
+        model.addAttribute("message", "Hello " + principal.getName());
         return "dashboard";
     }
 
     @GetMapping("/admin")
     public String admin(Model model, Principal principal) {
-        model.addAttribute("message", "Hello admin" + principal.getName());
+        model.addAttribute("message", "Hello admin " + principal.getName());
         return "admin";
     }
 }
