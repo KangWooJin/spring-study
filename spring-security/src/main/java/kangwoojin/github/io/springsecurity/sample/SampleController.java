@@ -1,10 +1,14 @@
 package kangwoojin.github.io.springsecurity.sample;
 
 import java.security.Principal;
+import java.util.concurrent.Callable;
 
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import lombok.RequiredArgsConstructor;
 
@@ -12,6 +16,13 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class SampleController {
     private final SampleService sampleService;
+
+    public static void print(String current) {
+        System.out.println(current);
+        final Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        System.out.println("authentication : " + authentication);
+        System.out.println("Thread: " + Thread.currentThread().getName());
+    }
 
     @GetMapping("/")
     public String index(Model model, Principal principal) {
@@ -46,5 +57,21 @@ public class SampleController {
     public String user(Model model, Principal principal) {
         model.addAttribute("message", "Hello user " + principal.getName());
         return "user";
+    }
+
+    @GetMapping("/async")
+    @ResponseBody
+    public Callable<String> async() {
+        print("async");
+
+        sampleService.asyncMethod();
+
+        return new Callable<String>() {
+            @Override
+            public String call() throws Exception {
+                print("callable");
+                return "async";
+            }
+        };
     }
 }

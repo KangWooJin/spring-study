@@ -2,6 +2,7 @@ package kangwoojin.github.io.springsecurity.sample;
 
 import java.util.Collection;
 
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -25,5 +26,11 @@ public class SampleService {
         log.debug("authorities {}", authorities);
         log.debug("credentials {}", credentials);
         log.debug("authenticated {}", authenticated);
+    }
+
+    @Async
+    public void asyncMethod() {
+        SampleController.print("asyncMethod");
+
     }
 }
