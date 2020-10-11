@@ -1,5 +1,6 @@
 package kangwoojin.github.io.springsecurity;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,9 +14,9 @@ import lombok.RequiredArgsConstructor;
 
 @RequestMapping("/signup")
 @Controller
-@RequiredArgsConstructor
 public class SignUpController {
-    private final AccountService accountService;
+    @Autowired
+    private AccountService accountService;
 
     @GetMapping
     public String signupForm(Model model) {

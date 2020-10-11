@@ -4,12 +4,15 @@ import java.security.Principal;
 import java.util.concurrent.Callable;
 
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import kangwoojin.github.io.springsecurity.user.Account;
+import kangwoojin.github.io.springsecurity.user.UserAccount;
 import lombok.RequiredArgsConstructor;
 
 @Controller
@@ -25,9 +28,9 @@ public class SampleController {
     }
 
     @GetMapping("/")
-    public String index(Model model, Principal principal) {
-        if (principal != null) {
-            model.addAttribute("message", "Hello Spring " + principal.getName());
+    public String index(Model model, @AuthenticationPrincipal(expression = "#this == 'anonymousUser' ? null : account") Account account) {
+        if (account != null) {
+            model.addAttribute("message", "Hello Spring " + account.getUsername());
         } else {
             model.addAttribute("message", "Hello Spring Security");
         }
